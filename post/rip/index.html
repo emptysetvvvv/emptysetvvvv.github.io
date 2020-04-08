@@ -8,7 +8,7 @@
 <meta name="description" content="A.F.O | R.I.P.">
 <meta name="theme-color" content="#000">
 <title>R.I.P. | emptyset</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1586360044180">
+<link rel="shortcut icon" href="/favicon.ico?v=1586361026565">
 <link rel="stylesheet" href="/styles/main.css">
 <link rel="stylesheet" href="/media/css/gemini.css">
 
@@ -152,7 +152,8 @@
       <div class="sidebar-body gemini" id="sidebar_body">
         
           
-            
+            <div class="post-side-meta" id="post_side_meta">
+              
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="/images/avatar.png"/>
@@ -163,7 +164,7 @@
     <div class="sidebar-item-box">
       <a href="/archives/">
         
-        <span class="site-item-stat-count">2</span>
+        <span class="site-item-stat-count">3</span>
         <span class="site-item-stat-name">文章</span>
       </a>
     </div>
@@ -222,6 +223,200 @@
 
 
 </div>
+            </div>
+            <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
+              <div class="toc-box right-motion">
+  <div class="toc-wrapper auto-number auto" id="toc_wrapper">
+    <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#zero">ZERO</a></li>
+<li><a href="#%E5%A3%B9">壹</a></li>
+<li><a href="#%E8%B4%B0">贰</a></li>
+<li><a href="#%E5%8F%81">叁</a></li>
+<li><a href="#%E8%82%86">肆</a></li>
+<li><a href="#%E4%BC%8D">伍</a></li>
+<li><a href="#inf">INF</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+</div>
+
+<script>
+
+let lastTop = 0, lList = [], hList = [], postBody, lastIndex = -1; 
+let active = 'active-show', activeClass = 'active-current';
+let tocWrapper = document.querySelector('#toc_wrapper');
+let tocContent = tocWrapper.children[0];
+let autoNumber = tocWrapper&&tocWrapper.classList.contains('auto-number');
+
+function addTocNumber(elem, deep) {
+  if (!elem) {
+    return;
+  }
+  let prop = elem.__proto__;
+
+  if (prop === HTMLUListElement.prototype) {
+    for (let i = 0; i < elem.children.length; i++) {
+      addTocNumber(elem.children[i], deep + (i + 1) + '.');
+    }
+  } else if (prop === HTMLLIElement.prototype) {
+    // 保存li元素
+    if (elem.children[0].__proto__ === HTMLAnchorElement.prototype) {
+      lList.push(elem);
+    }
+    for (let i = 0; i < elem.children.length; i++) {
+      let cur = elem.children[i];
+      if (cur.__proto__ === HTMLAnchorElement.prototype) {
+        if (autoNumber) {
+          cur.text =  deep + ' ' + cur.text;
+        }
+      } else if (cur.__proto__ === HTMLUListElement.prototype) {
+        addTocNumber(cur, deep);
+      }
+    }
+  }
+}
+
+function removeParentActiveClass() {
+  let parents = tocContent.querySelectorAll('.'+active)
+  parents.forEach(function(elem) {
+    elem.classList.remove(active);
+  });
+}
+
+function addActiveClass(index) {
+  if (index >= 0 && index < hList.length) {
+    lList[index].classList.add(activeClass);
+  }
+}
+
+function removeActiveClass(index) {
+  if (index >= 0 && index < hList.length) {
+    lList[index].classList.remove(activeClass);
+  }
+}
+
+function addActiveLiElemment(elem, parent) {
+  if (!elem || elem === parent) {
+    return;
+  } else {
+    if (elem.__proto__ === HTMLLIElement.prototype) {
+      elem.classList.add(active);
+    }
+    addActiveLiElemment(elem.parentElement, parent);
+  }
+}
+
+function showToc() {
+  if (tocWrapper) {
+    postBody = document.querySelector('#post_body');
+    for (let i = 0; i < postBody.children.length; i++) {
+      if (postBody.children[i].__proto__ === HTMLHeadingElement.prototype) {
+        hList.push(postBody.children[i]);
+      }
+    }
+    if (tocWrapper.classList.contains('compress')) {
+        tocContent.classList.add('closed');
+    } else if (tocWrapper.classList.contains('no_compress')){
+      tocContent.classList.add('expanded');
+    } else {
+      if (hList.length > 10) {
+        active = 'active-hidden'
+        tocContent.classList.add('closed');
+      } else {
+        tocContent.classList.add('expanded');
+      }
+    }
+  }
+}
+
+(function() {
+  // 处理不是从#一级标题开始目录
+  if (tocContent.children.length === 1 && tocContent.children[0].__proto__ === HTMLLIElement.prototype) {
+    let con = tocContent.children[0].children[0];
+    tocContent.innerHTML = con.innerHTML;
+  }
+  addTocNumber(tocContent, '');
+})();
+
+document.addEventListener('scroll', function(e) {
+  if (lList.length <= 0) {
+    return;
+  }
+  let scrollTop = document.scrollingElement.scrollTop + 10;
+  let dir;
+
+  if (lastTop - scrollTop > 0) {
+    dir = 'up';
+  } else {
+    dir = 'down';
+  }
+
+  lastTop = scrollTop;
+  if (scrollTop <= 0) {
+    if (lastIndex >= 0 && lastIndex < hList.length) {
+      lList[lastIndex].classList.remove(activeClass);
+    }
+    return;
+  }
+
+  let current = 0, hasFind = false;
+  for (let i = 0; i < hList.length; i++) {
+    if (hList[i].offsetTop > scrollTop) {
+      current = i;
+      hasFind = true;
+      break;
+    }
+  }
+  if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
+    current = hList.length - 1;
+  } else {
+    current--;
+  }
+  if (dir === 'down') {
+    if (current > lastIndex) {
+      addActiveClass(current);
+      removeActiveClass(lastIndex) 
+      lastIndex = current;
+      removeParentActiveClass();
+      lList[current] && addActiveLiElemment(lList[current].parentElement,tocContent);
+    }
+  } else {
+    if (current < lastIndex) {
+      addActiveClass(current);
+      removeActiveClass(lastIndex);
+      lastIndex = current;
+      removeParentActiveClass();
+      lList[current] && addActiveLiElemment(lList[current].parentElement,tocContent);
+    }
+  }
+});
+
+window.addEventListener('load', function() {
+  showToc();
+  document.querySelector('#sidebar').style='display: block;';
+  tocWrapper.classList.add('toc-active');
+  setTimeout(function() {
+    if ("createEvent" in document) {
+      let evt = document.createEvent("HTMLEvents");
+      evt.initEvent("scroll", false, true);
+      document.dispatchEvent(evt);
+    }
+    else {
+      document.fireEvent("scroll");
+    }
+  }, 500)
+})
+
+</script>
+            </div>
           
         
       </div>
@@ -348,7 +543,7 @@
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>1929<span class="pc-show">字数</span></span>
+      <span>1936<span class="pc-show">字数</span></span>
     </span>
     
   </div>
@@ -361,10 +556,11 @@
 <p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>2018.10.01-2019.11.17</mtext></mrow><annotation encoding="application/x-tex">\text{2018.10.01-2019.11.17}
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord text"><span class="mord">2018.10.01-2019.11.17</span></span></span></span></span></span></p>
 <hr>
+<h3 id="zero">ZERO</h3>
 <figure data-type="image" tabindex="1"><img src="https://emptysetvvvv.github.io/post-images/1586359758857.jpg" alt="" loading="lazy"></figure>
 <p>当你看到这段文字的时候，emptyset 大约的确已经离开很久了。</p>
 <p>带着太多太多的遗憾和不甘，就这样仓猝地退役了。</p>
-<hr>
+<h3 id="壹">壹</h3>
 <p>我想起来中考结束后的那一个午后，在学委的再三怂恿下，在我的重重踟躇下，在提交的最后一刻，我草草地在“信息学竞赛”一栏划下了对号。未曾想过，我的人生轨迹就此改变。</p>
 <p>我们都曾以为，我们可以一起并肩作战，直到他为学校所迫，弃信学数。当然，这是后话。</p>
 <p>至今回想起来，依然记得初次看到紫书时的欣喜，快乐得好像得到小红花的幼稚园小朋友，像看到高更回信时的梵高，像千年前赤壁长江头的丞相，对未来充满了好奇与憧憬。</p>
@@ -372,14 +568,14 @@
 <p>漆黑的夜幕，明晃晃的机房，艾教笑眯眯地歪着头讲着“深度优先搜索”，似在梦中，恍惚回到去年。</p>
 <p>从晚秋的第一道紫题起，我就明白我已经深深的沉沦其中了。</p>
 <p>最后一片雪花融化时，我提交了第一篇题解，[NOI2012]迷失游乐园，宣告着一个时期的结束。</p>
-<hr>
+<h3 id="贰">贰</h3>
 <p>凛冬远去时，我已经对省赛范围内的知识点略知一二了，尽管还不够熟悉。</p>
 <p>等待我的，是艾教在 vjudge 留下的七个章节的题目。那段春光，大概会是我一生中最努力的一段时光了罢。</p>
 <p>我曾熬夜至晨光熹微，困意掩不住 AK chapter IV 的喜悦久久回荡，亦曾惊叹于树剖的神奇，前后历时几周，一遍遍删除、重构，用不同于任何一篇题解的、自以为巧妙的方法通过[SDOI2011]染色。</p>
 <p>我曾在数学课被罚站时，以课本为稿纸琢磨 ExBSGS，亦曾在午读全班埋头黑学时，饶有兴趣地翻看《具体数学》。</p>
 <p>我曾习惯于放弃整个晚自习的时光，在颓坯声中默默地写不经意间遇到的题目，又在深夜匆匆补着作业，在困倦中沉沉睡去。</p>
 <p>我也曾累而充实着啊。</p>
-<hr>
+<h3 id="叁">叁</h3>
 <p>她是什么时候变了的呢？</p>
 <p>是在清晨班主任有意无意的的句句质问中，是在父亲深夜令我关机后的声声叹息中。</p>
 <p>是从曾经的年级前十、到一次偶然的失利、再到彻底从红榜上抹去印记之后。</p>
@@ -409,7 +605,7 @@
 <p>他想起来一位素未谋面的神犇：</p>
 <p><strong>我努力的冲刺，最终也没能赶上起跑时慢的那一步，究竟是开始时的天赋之差还是平时锻炼的稀松。</strong></p>
 <p>她看着看着就哭了。</p>
-<hr>
+<h3 id="肆">肆</h3>
 <p>“我，退役了。”</p>
 <p>多么苍白无力的文字啊。</p>
 <p>我曾设想过失败，但不曾想到，会这样失败。</p>
@@ -429,6 +625,7 @@
 <blockquote>
 <p>为什么不敢承认自己就是垃圾呢？</p>
 </blockquote>
+<h3 id="伍">伍</h3>
 <p>我，将我的青春和梦想，就埋在这里啊。</p>
 <p>留给我的，是空空的行囊，满目的疮痍和一片空白。</p>
 <p>是啊，我已经退役了啊，无论说什么都是苍白无力的了。</p>
@@ -450,7 +647,7 @@
 <p>我默默低下头，戴上帽子，迈着轻盈的步伐转身离开。</p>
 <p>深秋的风，铺面而来，吹得人眼睛生疼。</p>
 <p>回首蜉蝣般的 OI 生涯，可能亦算是足够精彩了罢。</p>
-<hr>
+<h3 id="inf">INF</h3>
 <blockquote>
 <p>きっともうこれ以上 傷つくことなど</p>
 </blockquote>
@@ -501,6 +698,10 @@
   </div>
   <div class="nav">
     <div class="nav-prev">
+      
+        <i class="fa fa-chevron-left"></i>
+        <a class="nav-pc-next" title="SSH学长的退场白" href="https://emptysetvvvv.github.io/post/ssh-xue-chang-de-tui-chang-bai/">SSH学长的退场白</a class="nav-pc-next">
+        <a class="nav-mobile-prev" title="SSH学长的退场白" href="https://emptysetvvvv.github.io/post/ssh-xue-chang-de-tui-chang-bai/">上一篇</a>
       
     </div>
     <div class="nav-next">
