@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://emptysetvvvv.github.io</id>
     <title>emptyset</title>
-    <updated>2020-04-08T15:53:26.214Z</updated>
+    <updated>2020-04-08T18:50:57.902Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://emptysetvvvv.github.io"/>
     <link rel="self" href="https://emptysetvvvv.github.io/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://emptysetvvvv.github.io/images/avatar.png</logo>
     <icon>https://emptysetvvvv.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, emptyset</rights>
+    <entry>
+        <title type="html"><![CDATA[题解 起义时刻春节联机赛2019半决赛 胜者组 开赛日]]></title>
+        <id>https://emptysetvvvv.github.io/post/ti-jie-qi-yi-shi-ke-chun-jie-lian-ji-sai-2019-ban-jue-sai-sheng-zhe-zu-kai-sai-ri/</id>
+        <link href="https://emptysetvvvv.github.io/post/ti-jie-qi-yi-shi-ke-chun-jie-lian-ji-sai-2019-ban-jue-sai-sheng-zhe-zu-kai-sai-ri/">
+        </link>
+        <updated>2020-04-08T18:38:15.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[SSH学长的退场白]]></title>
         <id>https://emptysetvvvv.github.io/post/ssh-xue-chang-de-tui-chang-bai/</id>
