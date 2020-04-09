@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://emptysetvvvv.github.io</id>
     <title>emptyset</title>
-    <updated>2020-04-09T04:35:01.905Z</updated>
+    <updated>2020-04-09T08:17:30.902Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://emptysetvvvv.github.io"/>
     <link rel="self" href="https://emptysetvvvv.github.io/atom.xml"/>
@@ -25,7 +25,7 @@
         <updated>2020-04-08T18:38:15.000Z</updated>
     </entry>
     <entry>
-        <title type="html"><![CDATA[SSH学长的退场白]]></title>
+        <title type="html"><![CDATA[学长的退场白]]></title>
         <id>https://emptysetvvvv.github.io/post/ssh-xue-chang-de-tui-chang-bai/</id>
         <link href="https://emptysetvvvv.github.io/post/ssh-xue-chang-de-tui-chang-bai/">
         </link>
