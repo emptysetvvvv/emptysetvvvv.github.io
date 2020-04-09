@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="keywords" content="Gridea静态个人博客">
+<meta name="description" content="A.F.O | R.I.P.">
+<meta name="theme-color" content="#000">
+<title>冒险史 | emptyset</title>
+<link rel="shortcut icon" href="/favicon.ico?v=1586406647798">
+<link rel="stylesheet" href="/styles/main.css">
+<link rel="stylesheet" href="/media/css/gemini.css">
+
+<link rel="stylesheet" href="/media/fonts/font-awesome.css">
+<link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+<link href="/media/hljs/styles/androidstudio.css" rel="stylesheet">  
+
+<script src="/media/hljs/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+
+    <meta name="description" content="冒险史" />
+    <meta name="keywords" content="默示录" />
+  </head>
+  <body>
+    <div class="head-top-line"></div>
+    <div class="header-box">
+      
+<div class=" gemini">
+  <header class="header  ">
+    <div class="blog-header box-shadow-wrapper bg-color " id="header">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
+        </div>
+      </div>
+      <div class="site-meta">       
+        <div class="site-title">
+          
+            <a href="/" class="brand">
+              <span>emptyset</span>
+            </a>  
+          
+        </div>
+        
+          <p class="subtitle">Farewell,my princess!</p>
+        
+      </div>
+      <nav class="site-nav" id="site_nav">
+        <ul id="nav_ul">
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/" target="_self">
+                  <i class="fa fa-home"></i> 首页
+                </a>
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/archives" target="_self">
+                  <i class="fa fa-archive"></i> 归档
+                </a>
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/tags" target="_self">
+                  <i class="fa fa-tags"></i> 标签
+                </a>
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="https://emptysetvvvv.github.io/post/guan-yu" target="_self">
+                  <i class="fa fa-globe"></i> 关于
+                </a>
+              
+            </li>
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
+
+<script type="text/javascript"> 
+ 
+  let showNav = true;
+
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    let sideBar = document.querySelector('.sidebar');
+    let navUl = document.querySelector('#nav_ul');
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+    if (siteNav.classList.contains('nav-menu-active')) {
+      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
+    } else {
+      siteNav.style = "";
+    }
+  }
+
+  navToggle.addEventListener('click',navClick);  
+</script>
+    </div>
+    <div class="main-continer">
+      
+      <div class="section-layout gemini ">
+        <div class="section-layout-wrapper">
+          
+
+<div class="sidebar">
+  
+    <div class="sidebar-box box-shadow-wrapper bg-color right-motion" id="sidebar">
+      
+        <div class="post-list-sidebar">
+          <div class="sidebar-title">
+            <span id="tocSideBar" class="sidebar-title-item sidebar-title-active">文章目录</span>
+            <span id="metaSideBar" class="sidebar-title-item">站点概览</span>
+          </div>
+        </div>
+      
+      <div class="sidebar-body gemini" id="sidebar_body">
+        
+          
+            <div class="post-side-meta" id="post_side_meta">
+              
+<div class="sidebar-wrapper box-shadow-wrapper bg-color">
+  <div class="sidebar-item">
+    <img class="site-author-image right-motion" src="/images/avatar.png"/>
+    <p class="site-author-name">emptyset</p>
+    <p class="site-description right-motion">A.F.O | R.I.P.</p>
+  </div>
+  <div class="sidebar-item side-item-stat right-motion">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        
+        <span class="site-item-stat-count">5</span>
+        <span class="site-item-stat-name">文章</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="">
+        <span class="site-item-stat-count">2</span>
+        <span class="site-item-stat-name">分类</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">2</span>
+        <span class="site-item-stat-name">标签</span>
+      </a>
+    </div>
+  </div>
+  
+    
+      <div class="sidebar-item" style="border-top: 1px dotted #ccc; margin-top: 10px;">
+      </div>
+    
+  
+  
+    <div class="sidebar-item sidebar-item-social">
+      <div class="social-item">
+        
+          
+            <a href="https://github.com/emptysetvvvv">
+              <i class="fa fa-github" title="github"></i>
+            </a>
+          
+            <a href="https://www.luogu.com.cn/user/135658">
+              <i class="fa fa-globe" title="洛谷"></i>
+            </a>
+          
+        
+        
+      </div>
+    </div>
+  
+
+  
+
+
+</div>
+            </div>
+            <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
+              <div class="toc-box right-motion">
+  <div class="toc-wrapper auto-number auto" id="toc_wrapper">
+    <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E8%83%8C%E6%99%AF">背景</a></li>
+<li><a href="#%E4%BB%A3%E5%BA%8F">代序</a></li>
+<li><a href="#day-1">day-1</a></li>
+<li><a href="#day0">day0</a></li>
+<li><a href="#day1">day1</a></li>
+<li><a href="#day2">day2</a></li>
+<li><a href="#day3">day3</a></li>
+<li><a href="#day4">day4</a></li>
+<li><a href="#day5">day5</a></li>
+<li><a href="#day6">day6</a></li>
+<li><a href="#day7">day7</a></li>
+<li><a href="#day8">day8</a></li>
+<li><a href="#day9">day9</a></li>
+<li><a href="#day10">day10</a>
+<ul>
+<li><a href="#%E5%89%8D%E7%AF%87">前篇</a></li>
+<li><a href="#%E5%90%8E%E7%AF%87">后篇</a></li>
+</ul>
+</li>
+<li><a href="#day11">day11</a></li>
+<li><a href="#day12">day12</a>
+<ul>
+<li><a href="#%E5%BC%95%E5%AD%90">引子</a></li>
+<li><a href="#%E9%9A%8F%E6%83%B3">随想</a></li>
+<li><a href="#%E8%AE%B0%E8%BD%BD">记载</a></li>
+</ul>
+</li>
+<li><a href="#day13">day13</a></li>
+<li><a href="#day14">day14</a></li>
+<li><a href="#day15">day15</a></li>
+<li><a href="#%E5%BD%92%E7%A8%8B">归程</a></li>
+<li><a href="#%E5%9B%9E%E5%AE%B6%E8%B7%AF%E7%BA%BF%E5%B0%BE%E5%A3%B0">回家路线（尾声）</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+</div>
+
+<script>
+
+let lastTop = 0, lList = [], hList = [], postBody, lastIndex = -1; 
+let active = 'active-show', activeClass = 'active-current';
+let tocWrapper = document.querySelector('#toc_wrapper');
+let tocContent = tocWrapper.children[0];
+let autoNumber = tocWrapper&&tocWrapper.classList.contains('auto-number');
+
+function addTocNumber(elem, deep) {
+  if (!elem) {
+    return;
+  }
+  let prop = elem.__proto__;
+
+  if (prop === HTMLUListElement.prototype) {
+    for (let i = 0; i < elem.children.length; i++) {
+      addTocNumber(elem.children[i], deep + (i + 1) + '.');
+    }
+  } else if (prop === HTMLLIElement.prototype) {
+    // 保存li元素
+    if (elem.children[0].__proto__ === HTMLAnchorElement.prototype) {
+      lList.push(elem);
+    }
+    for (let i = 0; i < elem.children.length; i++) {
+      let cur = elem.children[i];
+      if (cur.__proto__ === HTMLAnchorElement.prototype) {
+        if (autoNumber) {
+          cur.text =  deep + ' ' + cur.text;
+        }
+      } else if (cur.__proto__ === HTMLUListElement.prototype) {
+        addTocNumber(cur, deep);
+      }
+    }
+  }
+}
+
+function removeParentActiveClass() {
+  let parents = tocContent.querySelectorAll('.'+active)
+  parents.forEach(function(elem) {
+    elem.classList.remove(active);
+  });
+}
+
+function addActiveClass(index) {
+  if (index >= 0 && index < hList.length) {
+    lList[index].classList.add(activeClass);
+  }
+}
+
+function removeActiveClass(index) {
+  if (index >= 0 && index < hList.length) {
+    lList[index].classList.remove(activeClass);
+  }
+}
+
+function addActiveLiElemment(elem, parent) {
+  if (!elem || elem === parent) {
+    return;
+  } else {
+    if (elem.__proto__ === HTMLLIElement.prototype) {
+      elem.classList.add(active);
+    }
+    addActiveLiElemment(elem.parentElement, parent);
+  }
+}
+
+function showToc() {
+  if (tocWrapper) {
+    postBody = document.querySelector('#post_body');
+    for (let i = 0; i < postBody.children.length; i++) {
+      if (postBody.children[i].__proto__ === HTMLHeadingElement.prototype) {
+        hList.push(postBody.children[i]);
+      }
+    }
+    if (tocWrapper.classList.contains('compress')) {
+        tocContent.classList.add('closed');
+    } else if (tocWrapper.classList.contains('no_compress')){
+      tocContent.classList.add('expanded');
+    } else {
+      if (hList.length > 10) {
+        active = 'active-hidden'
+        tocContent.classList.add('closed');
+      } else {
+        tocContent.classList.add('expanded');
+      }
+    }
+  }
+}
+
+(function() {
+  // 处理不是从#一级标题开始目录
+  if (tocContent.children.length === 1 && tocContent.children[0].__proto__ === HTMLLIElement.prototype) {
+    let con = tocContent.children[0].children[0];
+    tocContent.innerHTML = con.innerHTML;
+  }
+  addTocNumber(tocContent, '');
+})();
+
+document.addEventListener('scroll', function(e) {
+  if (lList.length <= 0) {
+    return;
+  }
+  let scrollTop = document.scrollingElement.scrollTop + 10;
+  let dir;
+
+  if (lastTop - scrollTop > 0) {
+    dir = 'up';
+  } else {
+    dir = 'down';
+  }
+
+  lastTop = scrollTop;
+  if (scrollTop <= 0) {
+    if (lastIndex >= 0 && lastIndex < hList.length) {
+      lList[lastIndex].classList.remove(activeClass);
+    }
+    return;
+  }
+
+  let current = 0, hasFind = false;
+  for (let i = 0; i < hList.length; i++) {
+    if (hList[i].offsetTop > scrollTop) {
+      current = i;
+      hasFind = true;
+      break;
+    }
+  }
+  if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
+    current = hList.length - 1;
+  } else {
+    current--;
+  }
+  if (dir === 'down') {
+    if (current > lastIndex) {
+      addActiveClass(current);
+      removeActiveClass(lastIndex) 
+      lastIndex = current;
+      removeParentActiveClass();
+      lList[current] && addActiveLiElemment(lList[current].parentElement,tocContent);
+    }
+  } else {
+    if (current < lastIndex) {
+      addActiveClass(current);
+      removeActiveClass(lastIndex);
+      lastIndex = current;
+      removeParentActiveClass();
+      lList[current] && addActiveLiElemment(lList[current].parentElement,tocContent);
+    }
+  }
+});
+
+window.addEventListener('load', function() {
+  showToc();
+  document.querySelector('#sidebar').style='display: block;';
+  tocWrapper.classList.add('toc-active');
+  setTimeout(function() {
+    if ("createEvent" in document) {
+      let evt = document.createEvent("HTMLEvents");
+      evt.initEvent("scroll", false, true);
+      document.dispatchEvent(evt);
+    }
+    else {
+      document.fireEvent("scroll");
+    }
+  }, 500)
+})
+
+</script>
+            </div>
+          
+        
+      </div>
+    </div>
+  
+</div>
+<script>
+  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+  const SLIDE_UP_IN = 'slide-up-in';
+
+  let sidebar = document.querySelector('#sidebar'),
+  tocSideBar = document.querySelector('#tocSideBar'),
+  metaSideBar = document.querySelector('#metaSideBar'),
+  postToc = document.querySelector('#post_toc'),
+  postSiteMeta = document.querySelector('#post_side_meta'),
+  sidebarTitle = document.querySelector('.sidebar-title'),
+  sidebarBody = document.querySelector('#sidebar_body');
+
+  tocSideBar && tocSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  metaSideBar && metaSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  function toggleSidebar(e) {
+    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
+    if (currentTitle == e.srcElement) {
+      return ;
+    }
+    let current, showElement, hideElement;
+    if (e.srcElement == metaSideBar) {
+      showElement = postSiteMeta;
+      hideElement = postToc;
+    } else if (e.srcElement == tocSideBar){
+      showElement = postToc;
+      hideElement = postSiteMeta;
+    }
+    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+    window.Velocity(hideElement, 'stop');
+    window.Velocity(hideElement, 'transition.slideUpOut', {
+      display: 'none',
+      duration: 200,
+      complete: function () {
+        window.Velocity(showElement, 'transition.slideDownIn', {
+          duration: 200
+        });
+      }
+    })
+    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
+  }
+
+  postToc && postToc.addEventListener('transitionend', function() {
+    this.classList.remove(SLIDE_UP_IN);
+  });
+
+  if (sidebarBody) {
+    if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
+      let hasFix = false;
+      let scrollEl = document.querySelector('.main-continer');
+      let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
+      window.addEventListener('scroll', function(e) {
+        if (document.scrollingElement.scrollTop >= limitTop) {
+          if (!hasFix) {
+            sidebar.classList.add('sidebar-fixed');
+            hasFix = true;
+          }
+        } else {
+          if (hasFix) {
+            sidebar.classList.remove('sidebar-fixed');
+            hasFix = false;
+          }
+        }
+      });
+    }
+  }
+  
+</script>
+          <div class="section-box box-shadow-wrapper">
+            <div class="section bg-color post post-page">
+              <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://emptysetvvvv.github.io/post/mou-xian-shi/">
+      冒险史
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
+      <span>2020-04-09</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+      <span class="meta-item">
+        <i class="fa fa-folder-o"></i>
+        <span class="pc-show">分类于</span>
+        
+          
+            <a href="https://emptysetvvvv.github.io/tag/AJo6Xq4vD/">
+              <span>默示录</span>
+            </a>
+          
+        
+      </span>
+      <span class="post-meta-divider">|</span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>20分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>5496<span class="pc-show">字数</span></span>
+    </span>
+    
+  </div>
+</header>
+              <div class="post-body next-md-body" id="post_body">
+                <p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathsize="2.488em"><mtext>冒险史</mtext></mstyle></mrow><annotation encoding="application/x-tex">\Huge\text{冒险史}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.7001250399999999em;vertical-align:0em;"></span><span class="mord text sizing reset-size6 size11"><span class="mord cjk_fallback">冒险史</span></span></span></span></span></span></p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathsize="1.2em"><mtext>__empty_set</mtext></mstyle></mrow><annotation encoding="application/x-tex">\large\text{\_\_empty\_set}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.110096em;vertical-align:-0.372em;"></span><span class="mord text sizing reset-size6 size7"><span class="mord">__empty_set</span></span></span></span></span></span></p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>2019.07.04-2019.08.03</mtext></mrow><annotation encoding="application/x-tex">\text{2019.07.04-2019.08.03}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord text"><span class="mord">2019.07.04-2019.08.03</span></span></span></span></span></span></p>
+<hr>
+<h2 id="背景">背景</h2>
+<blockquote>
+<p>2019年暑假，Phinney/emptyset/6thNOS/马哥往之 yyhs 训练。</p>
+</blockquote>
+<figure data-type="image" tabindex="1"><img src="https://emptysetvvvv.github.io/post-images/1586405808478.jpg" alt="" loading="lazy"></figure>
+<h2 id="代序">代序</h2>
+<p>我很庆幸，我出生于黄金时代。</p>
+<p>我十六岁的时候，共和国的铁路已经足以让我们在一天内穿过大半个国家。现在是公元9102年07月04日，我正在这样的特快列车上，她将于四个小时后停靠在浙江省余姚北站。</p>
+<figure data-type="image" tabindex="2"><img src="https://emptysetvvvv.github.io/post-images/1586405894358.jpg" alt="" loading="lazy"></figure>
+<p>我不想看书了，呆呆的看着窗外，那是一道很宽的水面，滚滚长江东逝水，跟我想的一样，运输船拖着长长的彗尾，远处有一座平行的桥，不过严格意义上讲，他们都不是真正的桥。</p>
+<p>原来真的有披着蓑戴着笠，弯着腰在稻田里的农人。我想到就在不久前，我还在古城期望着进程，二十一点一刻，我徘徊在铁一的操场上，寻找着最优的角度来欣赏二楼机房的灯光，真是绝妙的对比啊。我甚至能看到一点黑板，我知道上面写着什么，几分钟前我还在其上留下印记。</p>
+<p>离开的时候，我庄严的欣赏了一小会儿，这里有我喜欢的美。我轻轻的鞠了一躬，二楼机房的门总是吱呀吱呀地响。</p>
+<p>即使在搬到三楼机房很久后，我也常常记起与 OI 的相遇，那是一个很宽阔很明亮的空间，但在我的记忆里是一个狭小阴暗的黑盒，窗外的确的是漆黑一片，夹杂着操场的嘈杂声。声音是模糊不清的，画面是失真的，我能够想到的最好的描述，就是悬疑电影里对回忆的渲染，仿佛将要告诉我们真相。</p>
+<p>牛顿、秦始皇、冯·诺依曼、图灵、Dijkstra……全都是天才，我从来没见过这么有趣的人。<br>
+黄金时代，人生就像动态规划，结论平凡。</p>
+<p>9102年07月04日</p>
+<p>emptyset</p>
+<h2 id="day-1">day-1</h2>
+<p>++失联人口</p>
+<figure data-type="image" tabindex="3"><img src="https://emptysetvvvv.github.io/post-images/1586405925961.jpg" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="4"><img src="https://emptysetvvvv.github.io/post-images/1586406276715.jpg" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="5"><img src="https://emptysetvvvv.github.io/post-images/1586406283974.jpg" alt="" loading="lazy"></figure>
+<h2 id="day0">day0</h2>
+<p>yyhs 的高高拱门可真是气派啊，不像某 tyz——“诶，你们学校的门咋没了？？”。突然发现北方好干燥啊，学校环境挺好的，宿舍环境倒是很一般了（女生宿舍楼？？），“小贤家”是一家很棒的餐厅，机房的键盘手感蛮好的（当然不能与二楼机房相比），就是没了 sublime，DevC++ 的设置也很奇怪（为什么 Tab 键的空白那么长啊啊）。从超市回来后去机房水了道题（早上在高铁上想好的，顺便洛谷打卡算命 qwq），然后被拉回来挂蚊帐（否则会死的很惨啊啊啊），这里真是很有意思，晚上9:50就熄灯了，但是早上5:40就要起来，和马哥约了跑步，不过大致是要下雨咕咕咕了。Phinney 这个人赢真是体（桑）贴（心）周（病）到（狂），大晚上的（其实好像也就十点）居然要打电话和女朋友聊天，我真想“捏死他）”，不过马哥好像已经去了。</p>
+<p>很久不会这么早睡了，被冻醒爬起来把游记补完，这将是最长也是最水的一篇了。</p>
+<figure data-type="image" tabindex="6"><img src="https://emptysetvvvv.github.io/post-images/1586405970417.jpg" alt="" loading="lazy"></figure>
+<h2 id="day1">day1</h2>
+<p>“我亲眼见你爆了零，被人家吊着打。”</p>
+<p>几个小时从质数的定义讲到高次同余方程，这里的训练方式的确跟咱不一样，很多知识不提前看的确是理解不了的。信息量很大，甚至 Miller-Robbin 算法也有提到（我从来不会想到使用这些“不严谨”的算法）。</p>
+<p>很难受的是，关于质数在 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>!</mo></mrow><annotation encoding="application/x-tex">n!</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">n</span><span class="mclose">!</span></span></span></span> 的唯一分解式中的幂，我有十分深刻的印象在博客中写过，可惜我只把这当做是具体玄学中作者的有趣研究，在看到 T1 时完全没有考虑到对原结论的使用。T2 是毒瘤。Floyd 的30分做法是显然的，TLE 也是显然的。看数据范围，计算了复杂度正解大概是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mi>n</mi><mn>3</mn></msup><mi>log</mi><mo>⁡</mo><mi>k</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n^3\log k)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mclose">)</span></span></span></span>，想来也是矩阵加快速幂优化，我很快得出了使用矩阵的答案：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>A</mi><mn>1</mn></msup><mo>+</mo><msup><mi>A</mi><mn>2</mn></msup><mo>+</mo><msup><mi>A</mi><mn>3</mn></msup><mo>+</mo><mo>…</mo><mo>…</mo></mrow><annotation encoding="application/x-tex">A^1+A^2+A^3+……</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord mathdefault">A</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord mathdefault">A</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord mathdefault">A</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.12em;vertical-align:0em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">…</span></span></span></span>，直接计算肯定是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mi>n</mi><mn>3</mn></msup><mi>k</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n^3k)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mclose">)</span></span></span></span> 的，可是我却没能想出快速幂加速的方法，陷入了迷宫，最终在离四十分钟时放弃了快速幂，写了一个有趣的分治，尽管很担心爆栈和自然大常数，但还是犹犹豫豫着交了。你真的不能想象，看到正解是一模一样的分治做法时我有多开心。如同第一个猜想的印证一般，第二个担忧很快也被证实了，递归需要展开成递推的形式。只拿了很少分，其实想来估计还有其他的细节，我总觉得重载运算符时没有开 <code>long long</code> ，这已经不是我第一次犯这样的错误了。T3 我不会，是真的不会，我看不明白题解，直到从机房离开都不懂，甚至 Phinney 打完了电话（可能打完了吧），我也没有完全知道是怎么一回事。</p>
+<p>笨。</p>
+<h2 id="day2">day2</h2>
+<p>任重而道远啊。</p>
+<p>我承认自己的笨，至少和人家的学生没得比啊。我一直觉得自己运气很好，感觉可以为我指引大致的方向，使得我能够轻松的得出那些不大复杂的结论。坏的一方面是，他制造的假象是仿佛我完完全全明白了这道题，其实呢，还有很多细节没有考虑清楚（尽管我一向觉得我是想明白了），结果辛辛苦苦“实现”的结论还没有暴力拿的分多。</p>
+<p>我不喜欢暴力，我觉得他们有失美感（除非给我一台超算，那倒是另一种快感了）。我不喜欢计算，说来其实是因为我太懒了，我宁可多花点时间想一种计算量稍小的方法。我喜欢的数学和信息的纯粹简洁，平凡的结论真是太漂亮了。</p>
+<p>这感觉真是让人难受，有了方向与结论，明明离正解那么近了啊。哈哈哈哈真是荒谬，近就是不能到达，那就是还有很远啊。</p>
+<p>月色迷蒙，山水几程，道远而任重。</p>
+<h2 id="day3">day3</h2>
+<p>我梦到我的同学们了。</p>
+<p>原来一次 AC，就可以让我兴奋这么久。不管怎么说，起码是有道题拿满了（出门左转洛咕 P3978 概率论，号称你咕最水的黑题），虽然只是人家学生眼里的一道傻逼题，可我开心啊。</p>
+<p>他们机房门口的墙上刻着一棵足够枝繁叶茂的 OI 知识树，猜想对人家的学生来说，不过是无聊装饰玩意儿。尽管已经见了数遍，每一次看到仍然会被深深的震撼，那么近，又那么远。如果有一天，铁一甚至关中大地上能有这样一面墙，这样一棵树，有这样一群人，该多好啊。</p>
+<figure data-type="image" tabindex="7"><img src="https://emptysetvvvv.github.io/post-images/1586406004585.jpg" alt="" loading="lazy"></figure>
+<p>晚上跟艾教通了电话，心里踏实多了，很有安全感的。</p>
+<p>我好像是一个在海边玩耍的孩子，不时为捡到更光滑的石子或更美丽的贝壳而欢欣鼓舞，而展现在我面前的是完全未探明的大海。</p>
+<h2 id="day4">day4</h2>
+<p>飞光飞光劝尔一杯酒，吾不识青天高黄地厚。</p>
+<p>说来也惭愧，时至今日，才第一次庄严的思考 IDA-star 算法。首次领略“基础算法”的神圣，原来竟然是这样，甚至连确切复杂度都没有。好事情是居然 AC 了，哈哈哈我一向觉得自己运气很好（当然也不全然是这样）。</p>
+<p>补前几天的高斯消元，才发觉以前写的都很不严谨（出门左转洛咕：线性方程组），往群里丢了两组 hack 数据，想来也没人理我，怎么说…… lzy 真好 ASCII3。</p>
+<p>//[数据删除]</p>
+<p>我们从机房离开的时候，灯已经熄灭了，下起了雨（还有好多好多有趣的题目和事情没有做呢）。</p>
+<p>苦昼短、苦昼短。</p>
+<h2 id="day5">day5</h2>
+<p>面对 vjudge 浅浅的绿色墙壁，心情真是舒畅多了，古城的小朋友们真是好努力啊。（当然啦诡异的做题时间戳也是客观存在的。）</p>
+<p>加油鸭，真的好希望你们好好珍惜机房的快乐时光。我相信若干年以后，再回想起，我会觉得我的青春是热血沸腾的。</p>
+<p>又多了诶。</p>
+<p>//[数据删除]</p>
+<p>我总觉得时间不多（其实如果不吃饭的话是差不多的），每天都有好多好多算法需要去夯实。</p>
+<figure data-type="image" tabindex="8"><img src="https://emptysetvvvv.github.io/post-images/1586406233785.jpg" alt="" loading="lazy"></figure>
+<p>比赛时顺流推出一道题会让人的心情十分舒畅，特别是在以前没怎么练习过 01Trie 树的情况下成功 AC，当然留下的印象也十分深刻。虽然是一道送温暖的题，可是从初看题时的懵，到否定 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mi>n</mi><mn>3</mn></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n^3)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span> 暴力而考虑 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mi>n</mi><mn>2</mn></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span> 差分，直到最后想到 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>ω</mi><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(\omega n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.03588em;">ω</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span> 字典树，终于找回了写题的感觉。</p>
+<p>不得不承认，我以前写题是挑剔的，只想着写一些更模板更“正式”的题。在这里，有很多特别有意思的题，限制空间不能开数组、像是小学奥数的神奇模拟，发现神仙结论、暴力做法加一行代码变正解（不是 cky 那种一行代码），正反向分别建图的强大搜索……</p>
+<p>都要好好学习，天天向上啊。（给所有小朋友）</p>
+<h2 id="day6">day6</h2>
+<p>以为数据结构的第一天会很友好的，不论如何说，至少没有 Splay 那种劝退萌新的。但是我错了，我对链表的力量一无所知。</p>
+<p>![找不到文件]</p>
+<p>每天都会见识好多好多神仙题啊。不说了，说够了，可能是以前的生活太安逸了吧。</p>
+<p>趣事二三件，录之如下：</p>
+<p>来浙江第二天清晨，洗过衣物着急要走，恰巧晾衣架（很高）上系了一段绳子，垂下来，挽了一个很小的结，便临时先把衣架连同衣服挂在绳上。晚上睡觉前，我留意到绳上又挂了几件衣服，显得相当拥挤。次日我去观察时，我的衣架上挂着几个其他衣架，由于空气很潮还没有完全干掉，我打算等几天再收。今早我特意去看了下，小小的绳上已经以极大的密度挂满了衣架，这些衣架下又延伸出新的衣架，形成了一个颇为壮观的树形结构。那啥……衣物一时是不能拿走了，过几天我再看吧。其他略。</p>
+<h2 id="day7">day7</h2>
+<p>我又一次错了，我对堆的力量一无所知。</p>
+<p>我以为我很努力的。</p>
+<p>昨日模拟赛时，人赢说，这是艾教以前讲过的原题，我嫌弃他大体思路都不记得一丁点儿。</p>
+<p>今天轮到我了。</p>
+<p>我很清晰的记得，中位数，数据结构3：树状数组题组第一道。那时大家都嫌弃正解麻烦，便用 <code>vector</code> 卡过了。对于此，我是很看不上的，觉得又不是什么难题，索性空在那里。后来时间长了，我又偷偷潜回去，用同样的方法提交了，很棒，过了。</p>
+<p>如今我看着十的六次方的数据范围，看着零点五秒的时限，踌躇着，愧疚着，心里真的特别难受。虽然由于题目本身不难写了出来（被卡了输入输出丢了二十分），可是还会有下一次的，我害怕啊。</p>
+<p>哈哈哈我现在看看去年的自己都觉得好笑。初学二分的时候，输出 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>l</mi></mrow><annotation encoding="application/x-tex">l</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span></span></span></span> 不行试试 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>r</mi></mrow><annotation encoding="application/x-tex">r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span></span></span></span>， <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>r</mi></mrow><annotation encoding="application/x-tex">r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span></span></span></span> 不行了试试 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>i</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">mid</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">i</span><span class="mord mathdefault">d</span></span></span></span> ，反正总有一个能使我的做题量 +1，总有一个能让我的排名好看一点，看着人家的代码，恍然大悟以为自己懂了，稀里糊涂地便交了。</p>
+<p>真是可怜啊，我现在才明白，想要好好学习，路有两条。</p>
+<p>零是胡乱拉个人一起讨论，你看，我没法办到像夏洛克那样时刻拿出一个头骨对话（在遇到花生前），也没法挂一个小黄鸭在显示屏上（因为我只有一只小小的铁一熊），但我觉得机房的小朋友就蛮可爱的，比如李总就挺乖的，草稿纸也是现成的，那么大大大一块黑板呐！</p>
+<p>一是写博客，但是你得会 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>LaTeX</mtext></mrow><annotation encoding="application/x-tex">\LaTeX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.89883em;vertical-align:-0.2155em;"></span><span class="mord text"><span class="mord textrm">L</span><span class="mspace" style="margin-right:-0.36em;"></span><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.68333em;"><span style="top:-2.904999em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord text"><span class="mord textrm sizing reset-size6 size3">A</span></span></span></span></span></span><span class="mspace" style="margin-right:-0.15em;"></span><span class="mord text"><span class="mord textrm">T</span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.46782999999999997em;"><span style="top:-2.7845em;"><span class="pstrut" style="height:3em;"></span><span class="mord text"><span class="mord textrm">E</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2155em;"><span></span></span></span></span><span class="mspace" style="margin-right:-0.125em;"></span><span class="mord textrm">X</span></span></span></span></span></span> 和 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">k</mi><mi mathvariant="normal">d</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">w</mi><mi mathvariant="normal">n</mi></mrow><annotation encoding="application/x-tex">\mathrm{Markdown}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord"><span class="mord mathrm">M</span><span class="mord mathrm">a</span><span class="mord mathrm">r</span><span class="mord mathrm">k</span><span class="mord mathrm">d</span><span class="mord mathrm">o</span><span class="mord mathrm" style="margin-right:0.01389em;">w</span><span class="mord mathrm">n</span></span></span></span></span>，这东西挺好使的。因为有些东西人家可能不想跟你讨论，比如费马小定理这种的（我觉得很漂亮啊）。<br>
+算作一点教训吧。</p>
+<p>枯了，这是什么神仙做法啊！！</p>
+<p>好在，晚上心情不错，甚至说蛮开心的。</p>
+<h2 id="day8">day8</h2>
+<p>自昨晚写完游记起，开始怀疑人生。卑微）</p>
+<p>不得不承认上午的课十分友好。然后……动态dp！！好的，比我想象的出现的早。一道整数想了好久啊，笨。</p>
+<p>枯了。</p>
+<figure data-type="image" tabindex="9"><img src="https://emptysetvvvv.github.io/post-images/1586406438129.png" alt="" loading="lazy"></figure>
+<blockquote>
+<p>马哥虐 Phinney 图</p>
+</blockquote>
+<h2 id="day9">day9</h2>
+<p>国赛选手 NOI 2019 <code>++rp</code></p>
+<p>好感动啊，第一次在私信里收到这么耐心的讲解。xjh 真是太棒了，解决了困扰了我十一年的疑惑。）</p>
+<p>小萌新 AC 一道黑题的标准方式：</p>
+<p>看看题意好像不怎么好弄啊，偷看眼标签哇咔咔咔压位线段树是什么玩意儿，劝退劝退，真是吓死本蒟蒻了。踱几圈后，判定此题“不可做”，无可奈何翻开题解，发现一个新天地，这回可全是什么神仙操作了，滑动几番后，判定题解“不可看”……十余秒后乖乖的跑回来，全屏了趴在显示器前，从字里行间盯出点思路来，想了许久于是决意去写，于是：//[数据删除]</p>
+<p>以此来纪念今天的下午时光。</p>
+<p><strong>2019年07月13日 十黑祭</strong></p>
+<h2 id="day10">day10</h2>
+<h3 id="前篇">前篇</h3>
+<p>自为风月马前卒。</p>
+<p>快速傅里叶变换，初次听说这个名词是在很遥远的过去，艾教笑谈 lxl 毒瘤有三，最后提及的就是 FFT。</p>
+<p>不过这真是我至今见识过的最美的东西之一，其震撼程度于我而言大概不亚于“我对三体世界讲话”。</p>
+<p>回望记录，惟有树状数组、Tarjan 的 LCA 能够这般更新我的认知，在他们面前，我只有理解的余地，或许非人力可以想出。</p>
+<p>我深深的明白，在 OI 的技能树中，我仍未迈出根结点半步。</p>
+<p>我虔诚的低下头，对遥远的叶子充满无限的敬畏和幻想。</p>
+<p>皎月半洒花。</p>
+<h3 id="后篇">后篇</h3>
+<p>借明月当头，灌水几段。</p>
+<p>路过某咕发现有月赛，在开始前几个小时才匆匆报了名。</p>
+<p>看眼 T1 似乎很水的样子，可是为什么一直给我 50 分嘛？？预处理改递归降复杂度……所以最后告诉我评测姬有怪病？？啊啊啊死了死了洛咕算命真准，诸事不宜。T2 小萌新胡乱想了一个链表，说来还是第一次自己想使用链表呢（链式前向星不可以算），原本是最终时刻的骗分保命，没想到一次 AC，这么好嘛？？给定数列，求所有区间逆序对数量和……T3 正解一眼看出来啦，这对于一个蒟蒻而言是多么美好的事情啊，我真喜欢树状数组。遗憾的是，我估了下量级发现答案会敲大。保守的开了 <code>unsigned long long</code> ……所以告诉我有几个数据是压位高精度？！嗯嗯……其实你咕月赛向来是 4 道题，咕咕。</p>
+<p>法兰西万岁，晚安。</p>
+<p><strong>2019年07月14日 洛咕第一场月赛祭</strong></p>
+<h2 id="day11">day11</h2>
+<p>好冷清啊，我不喜欢这种孤独的感觉。</p>
+<p>很开心，自己 yy 出了带修莫队，虽然傻乎乎的把块的大小设为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msqrt><mi>n</mi></msqrt></mrow><annotation encoding="application/x-tex">\sqrt{ n}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.04em;vertical-align:-0.23972em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8002800000000001em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord mathdefault">n</span></span></span><span style="top:-2.76028em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,
+-10,-9.5,-14c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54c44.2,-33.3,65.8,
+-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10s173,378,173,378c0.7,0,
+35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429c69,-144,104.5,-217.7,106.5,
+-221c5.3,-9.3,12,-14,20,-14H400000v40H845.2724s-225.272,467,-225.272,467
+s-235,486,-235,486c-2.7,4.7,-9,7,-19,7c-6,0,-10,-1,-12,-3s-194,-422,-194,-422
+s-65,47,-65,47z M834 80H400000v40H845z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.23972em;"><span></span></span></span></span></span></span></span></span> ，但是数据偏水，又开了 O2，也算是有一道 AC了。打破了我的固有认知，T1 标算写的是随机化，只是苦了我白白想了 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mn>2</mn><mi>n</mi></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">O(2^n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span> 的“朴素”做法（嗯……数据 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn><mo>×</mo><mn>1</mn><msup><mn>0</mn><mn>5</mn></msup></mrow><annotation encoding="application/x-tex">2\times10^5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">5</span></span></span></span></span></span></span></span></span></span></span>），场上很多同学都随机化贪心成功拿到满分了呢，只好说我太谨慎和胆小了，从来不会去考虑这样的事情。</p>
+<p>星星学姐好棒啊，讲课敲清晰的。她给我透露了明天讲课的  ppt，整整有173页呢！好期待明天的课程啊。（雾）</p>
+<p>仿佛是在昨天，我还在一脸懵逼却充满崇敬的听人家说，初二有个大佬“满口傻逼题，叫人半懂不懂的”。<br>
+弹指间，又三年。</p>
+<p>又是一年 NOI，多么神圣好像在梦里（雾）。</p>
+<p>xjh、ranwen 二位神仙，加加油！！！</p>
+<p>陌上花开。</p>
+<h2 id="day12">day12</h2>
+<h3 id="引子">引子</h3>
+<p>每天夜晚有一只毛绒绒的小小熊陪我沉沉睡去。</p>
+<p>没有人知道故事的结局。</p>
+<p>她曾醒来过吗？</p>
+<p>她会醒来吗？</p>
+<h3 id="随想">随想</h3>
+<p>好多（many）好多（many）好吃的（划掉）平衡树想要学 Treap 想要学 Splay 想要学 AVL 想要学替罪羊 甚至想要学红黑树 还有珂朵莉什么的最可爱了</p>
+<figure data-type="image" tabindex="10"><img src="https://emptysetvvvv.github.io/post-images/1586406065786.png" alt="" loading="lazy"></figure>
+<p>我们再次声明 <code>for</code> 和括号之间没有空格 声明大括号是不换行的 声明 SPFA 已死 Dijkstra 永生 声明 LCA 要写 Tarjan 的 声明一定要在 <code>freopen</code> 前加 <code>%lca</code> 和女装优化 声明快读是邪教除非 <code>fread</code> 和 <code>fwrite</code> 我不管反正汝佳的代码最标准了（引战）</p>
+<h3 id="记载">记载</h3>
+<blockquote>
+<p>“认真想清楚模型的意义，搞明白为什么可以这样，而不是简单的知道怎样做，就套上一个模板了事，那样，是不是也太糟蹋这门科学了”</p>
+</blockquote>
+<blockquote>
+<p>“人生就像动态规划，你的一个又一个阶段是由上天安排的，而你，决定的是在这一阶段可以由上一阶段的哪些状态转移而来。越勤奋，越幸运，并不代表这一次你决策的方向有多么优秀，却代表着现在的这一个状态能够续写多少可能的结果。”</p>
+</blockquote>
+<blockquote>
+<p>Raise your standards as high as you can live with,avoid wasting your time on routine problems,and always try to work as closely as possible at the boundary of your abilities.<br>
+Do this because it's the only way of discovering how that boundary should be moved forward.（Dijkstra 对广大青年的寄语）</p>
+</blockquote>
+<h2 id="day13">day13</h2>
+<p>不论如何讲，总算是有一回摆脱被碾压的命运了。</p>
+<p>我知道我的幸运，也知道山海的浩瀚宇宙的浪漫，可是我开心啊！！</p>
+<p>还有，我好喜欢 UVa 啊，那个圆圆的小红点是我对 qq 唯一的期盼。</p>
+<figure data-type="image" tabindex="11"><img src="https://emptysetvvvv.github.io/post-images/1586406147978.jpg" alt="" loading="lazy"></figure>
+<h2 id="day14">day14</h2>
+<p>饿了。</p>
+<figure data-type="image" tabindex="12"><img src="https://emptysetvvvv.github.io/post-images/1586406076410.jpg" alt="" loading="lazy"></figure>
+<blockquote>
+<p>马哥</p>
+</blockquote>
+<figure data-type="image" tabindex="13"><img src="https://emptysetvvvv.github.io/post-images/1586406086347.jpg" alt="" loading="lazy"></figure>
+<blockquote>
+<p>Phinney</p>
+</blockquote>
+<h2 id="day15">day15</h2>
+<p><strong>你说，人家 GDfz 怎么就那么多百年一遇的人才呢？【哭</strong></p>
+<h2 id="归程">归程</h2>
+<p>9102年08月02日黄昏时分，起风了。至少一个月以来，这不常见。天色暗了下去，他眯起了眼睛，玻璃幕墙上闪烁着刺眼的强光。于他而言，在相当长的一段时间内，这是余姚最后的夕阳了。他记得来的时候，也是这样的画，可是，那时候的他多兴奋啊。</p>
+<p>再过些时候，晚霞褪去，就该点上星辰了。可惜跟古城一样，余姚的夜晚，也是笼罩在铁幕之下，看不到浩瀚星海。他不记得多长时间没有好好看过星星了，其实，即使他想看，也见不到的。当然，他也早早没有煮茶听书观星赏月的心境了，往事如烟，不堪留，都一样的。</p>
+<p>夜晚寂静的有些令人担忧，隐约传来模糊的蝉声，显得极为不真实，像是精心布置的音色奇怪的蜂鸣器。结束了，楼道空荡荡的，建筑材料凌乱的散在地板上，留下顶层的两个机房还点着灯，明晃晃的耀人的眼，门口溢出来大量废弃的纸制品，几乎没了油墨的笔，划下白板上一串极为不清晰的数字，这是他记得的最后一幅画面。他抱着一堆东西，匆匆的离开，<strong>明天的太阳升起的时候，已经不会有人来这里了</strong>。</p>
+<figure data-type="image" tabindex="14"><img src="https://emptysetvvvv.github.io/post-images/1586406337403.jpg" alt="" loading="lazy"></figure>
+<h2 id="回家路线尾声">回家路线（尾声）</h2>
+<p>如同21世纪初地球上的其他七十亿人一般，她第一次感受到这样的压迫感。似乎危机还在遥远的几个世纪后，她还可以好好享乐一番，震慑之后，有谁还会关心那么久远的事情呢？</p>
+<p>她以前总是说，好好学习，天天向上，现在也是。她觉得不对劲，从来没有过这种奇怪的感受：累。他真的好想休息休息……这话她以前写过很多次，大多数时候，紧接着她会写道：可是他不能！可惜她也不是他，没法在斗柄指东时忆当年草庐青葱，振声高呼前进！前进！她想起来两千年前的冬日，窗外早梅斜发，浴雪盛开，想起来凤凰的挽歌和白色的坟墓，想起来湿润的眼角，和她的泪水。</p>
+<p>她曾梦想着做童话的主人公，梦想着做执剑的勇士，她做梦都在想着，庄严的殿堂啊。</p>
+<p>梦醒了，也碎了。</p>
+<p><strong>公主死了，屠龙的少年还在燃烧。</strong></p>
+<figure data-type="image" tabindex="15"><img src="https://emptysetvvvv.github.io/post-images/1586406476068.jpg" alt="" loading="lazy"></figure>
+
+              </div>
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      emptyset
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://emptysetvvvv.github.io/post/mou-xian-shi/" title="冒险史">冒险史</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+      <a href="https://emptysetvvvv.github.io/tag/AJo6Xq4vD/"># 默示录</a>
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" title="题解 起义时刻春节联机赛2019半决赛 胜者组 开赛日" href="https://emptysetvvvv.github.io/post/ti-jie-qi-yi-shi-ke-chun-jie-lian-ji-sai-2019-ban-jue-sai-sheng-zhe-zu-kai-sai-ri/">题解 起义时刻春节联机赛2019半决赛 胜者组 开赛日</a>
+        <a class="nav-mobile-next" title="题解 起义时刻春节联机赛2019半决赛 胜者组 开赛日" href="https://emptysetvvvv.github.io/post/ti-jie-qi-yi-shi-ke-chun-jie-lian-ji-sai-2019-ban-jue-sai-sheng-zhe-zu-kai-sai-ri/">下一篇</a>
+        <i class="fa fa-chevron-right"></i>
+      
+    </div>
+  </div>
+</div>
+              
+  
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-box">
+  <footer class="footer">
+    <div class="copyright">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | © 2019-2020 Theme By HsxyHao
+    </div>
+    <div class="poweredby">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </div>
+  </footer>
+  
+  
+  <div class="gemini back-to-top" id="back_to_top">
+    <i class="fa fa-arrow-up"></i>
+    
+    <span class="scrollpercent">
+      <span id="back_to_top_text">0</span>%
+    </span>
+    
+  </div>
+  
+    <div class="bg-img">
+      <img src="\media\images\custom-bgImg.jpg" />
+    </div>
+  
+  
+  
+</div>
+<script>
+
+  let sideBarOpen = 'sidebar-open';
+  let body = document.body;
+  let back2Top = document.querySelector('#back_to_top'),
+  back2TopText = document.querySelector('#back_to_top_text'),
+  drawerBox = document.querySelector('#drawer_box'),
+  rightSideBar = document.querySelector('.sidebar'),
+  viewport = document.querySelector('body');
+
+  function scrollAnimation(currentY, targetY) {
+   
+    let needScrollTop = targetY - currentY
+    let _currentY = currentY
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10)
+      _currentY += dist
+      window.scrollTo(_currentY, currentY)
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY)
+      } else {
+        window.scrollTo(_currentY, targetY)
+      }
+    }, 1)
+  }
+
+  back2Top.addEventListener("click", function(e) {
+    scrollAnimation(document.scrollingElement.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+  
+  window.addEventListener('scroll', function(e) {
+    let percent = document.scrollingElement.scrollTop / (document.scrollingElement.scrollHeight - document.scrollingElement.clientHeight) * 100;
+    if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
+      back2Top.classList.add('back-top-active');
+    }
+    if (percent == 0) {
+      back2Top.classList.remove('back-top-active');
+    }
+    if (back2TopText) {
+      back2TopText.textContent = Math.floor(percent);
+    }
+  });
+
+  
+  let hasCacu = false;
+  window.onresize = function() {
+    if (window.width > 991) {
+      calcuHeight();
+    } else {
+      hasCacu = false;
+    }
+  }
+
+  function calcuHeight() {
+    // 动态调整站点概览高度
+    if (!hasCacu && back2Top.classList.contains('pisces') || back2Top.classList.contains('gemini')) {
+      let sideBar = document.querySelector('.sidebar');
+      let navUl = document.querySelector('#site_nav');
+      sideBar.style = 'margin-top:' + (navUl.offsetHeight + navUl.offsetTop + 15) + 'px;';
+      hasCacu = true;
+    }
+  }
+  calcuHeight();
+  
+  let open = false, MOTION_TIME = 300, RIGHT_MOVE_DIS = '320px';
+
+  if (drawerBox) {
+    let rightMotions = document.querySelectorAll('.right-motion');
+    let right = drawerBox.classList.contains('right');
+
+    let transitionDir = right ? "transition.slideRightIn" : "transition.slideLeftIn";
+
+    let openProp, closeProp;
+    if (right) {
+      openProp = {
+        paddingRight: RIGHT_MOVE_DIS 
+      };
+      closeProp = {
+        paddingRight: '0px'
+      };
+    } else {
+      openProp = {
+        paddingLeft: RIGHT_MOVE_DIS 
+      };
+      closeProp = {
+        paddingLeft: '0px'
+      };
+    }
+
+    drawerBox.onclick = function() {
+      open = !open;
+      window.Velocity(rightSideBar, 'stop');
+      window.Velocity(viewport, 'stop');
+      window.Velocity(rightMotions, 'stop');
+      if (open) {
+        window.Velocity(rightSideBar, {
+          width: RIGHT_MOVE_DIS
+        }, {
+          duration: MOTION_TIME,
+          begin: function() {
+            window.Velocity(rightMotions, transitionDir,{ });
+          }
+        })
+        window.Velocity(viewport, openProp,{
+          duration: MOTION_TIME
+        });
+      } else {
+        window.Velocity(rightSideBar, {
+          width: '0px'
+        }, {
+          duration: MOTION_TIME,
+          begin: function() {
+            window.Velocity(rightMotions, {
+              opacity: 0
+            });
+          }
+        })
+        window.Velocity(viewport, closeProp ,{
+          duration: MOTION_TIME
+        });
+      }
+      for (let i = 0; i < drawerBox.children.length; i++) {
+        drawerBox.children[i].classList.toggle('muse-line');
+      }
+      drawerBox.classList.toggle(sideBarOpen);
+    }
+  }
+
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
+
+</script>
+      <div class="light-box" id="light_box"></div>
+<script>
+  let imgs = document.querySelectorAll('.post-body img');
+  let lightBox = document.querySelector('#light_box');
+  lightBox.addEventListener('mousedown', (e) => {
+    e.preventDefault()
+  })
+  lightBox.addEventListener('mousewheel', (e) => {
+    e.preventDefault()
+  })
+  let width = window.innerWidth * 0.8;
+  lightBox.onclick= () => {
+    let img = lightBox.querySelector('img');
+    lightBox.style = '';
+    img && img.remove();
+  }
+  imgs.forEach(item => {
+    item.onclick = function(e) {
+      let lightImg = document.createElement('img');
+      lightImg.src = this.src;
+      lightBox.style = `height: 100%; opacity: 1; background-color: rgba(0, 0, 0, 0.5);cursor: zoom-out;`;
+      lightImg.style = `width: ${width}px; border: 1px solid #fff; border-radius: 2px;`;
+      lightImg.onclick = function() {
+        lightBox.style = '';
+        this.remove();
+      }
+      lightBox.append(lightImg);
+    }
+  })
+</script>
+    </div>
+  </body>
+  <script src="/media/js/motion.js"></script>
+</html>

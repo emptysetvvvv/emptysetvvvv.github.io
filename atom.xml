@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://emptysetvvvv.github.io</id>
     <title>emptyset</title>
-    <updated>2020-04-08T18:54:23.739Z</updated>
+    <updated>2020-04-09T04:33:18.580Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://emptysetvvvv.github.io"/>
     <link rel="self" href="https://emptysetvvvv.github.io/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://emptysetvvvv.github.io/images/avatar.png</logo>
     <icon>https://emptysetvvvv.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, emptyset</rights>
+    <entry>
+        <title type="html"><![CDATA[冒险史]]></title>
+        <id>https://emptysetvvvv.github.io/post/mou-xian-shi/</id>
+        <link href="https://emptysetvvvv.github.io/post/mou-xian-shi/">
+        </link>
+        <updated>2020-04-09T03:37:34.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[题解 起义时刻春节联机赛2019半决赛 胜者组 开赛日]]></title>
         <id>https://emptysetvvvv.github.io/post/ti-jie-qi-yi-shi-ke-chun-jie-lian-ji-sai-2019-ban-jue-sai-sheng-zhe-zu-kai-sai-ri/</id>
