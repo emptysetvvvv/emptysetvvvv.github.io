@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://emptysetvvvv.github.io</id>
     <title>emptyset</title>
-    <updated>2020-04-13T08:32:59.115Z</updated>
+    <updated>2020-04-14T09:42:54.490Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://emptysetvvvv.github.io"/>
     <link rel="self" href="https://emptysetvvvv.github.io/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://emptysetvvvv.github.io/images/avatar.png</logo>
     <icon>https://emptysetvvvv.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, emptyset</rights>
+    <entry>
+        <title type="html"><![CDATA[题解 [SHOI2012]随机树 洛谷P3830]]></title>
+        <id>https://emptysetvvvv.github.io/post/ti-jie-shoi2012sui-ji-shu-luo-gu-p3830/</id>
+        <link href="https://emptysetvvvv.github.io/post/ti-jie-shoi2012sui-ji-shu-luo-gu-p3830/">
+        </link>
+        <updated>2020-04-14T09:05:04.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[题解 [SDOI2011]染色 洛谷P2486]]></title>
         <id>https://emptysetvvvv.github.io/post/ti-jie-sdoi2011ran-se-luo-gu-p2486/</id>
@@ -23,6 +30,13 @@
         <link href="https://emptysetvvvv.github.io/post/ti-jie-haoi2008yuan-shang-de-zheng-dian-luo-gu-p2508/">
         </link>
         <updated>2020-04-10T07:43:37.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[回忆录]]></title>
+        <id>https://emptysetvvvv.github.io/post/hui-yi-lu/</id>
+        <link href="https://emptysetvvvv.github.io/post/hui-yi-lu/">
+        </link>
+        <updated>2020-04-09T08:19:14.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[冒险史]]></title>
@@ -44,6 +58,13 @@
         <link href="https://emptysetvvvv.github.io/post/ssh-xue-chang-de-tui-chang-bai/">
         </link>
         <updated>2020-04-08T15:39:10.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[R.I.P.]]></title>
+        <id>https://emptysetvvvv.github.io/post/rip/</id>
+        <link href="https://emptysetvvvv.github.io/post/rip/">
+        </link>
+        <updated>2020-04-08T13:45:33.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[关于]]></title>

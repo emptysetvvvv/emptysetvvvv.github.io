@@ -8,7 +8,7 @@
 <meta name="description" content="A.F.O | R.I.P.">
 <meta name="theme-color" content="#000">
 <title>题解 [SDOI2011]染色 洛谷P2486 | emptyset</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1586766756458">
+<link rel="shortcut icon" href="/favicon.ico?v=1586857371301">
 <link rel="stylesheet" href="/styles/main.css">
 <link rel="stylesheet" href="/media/css/gemini.css">
 
@@ -28,7 +28,7 @@
 
 
     <meta name="description" content="题解 [SDOI2011]染色 洛谷P2486" />
-    <meta name="keywords" content="题解" />
+    <meta name="keywords" content="轻重链剖分,题解" />
   </head>
   <body>
     <div class="head-top-line"></div>
@@ -164,19 +164,19 @@
     <div class="sidebar-item-box">
       <a href="/archives/">
         
-        <span class="site-item-stat-count">6</span>
+        <span class="site-item-stat-count">9</span>
         <span class="site-item-stat-name">文章</span>
       </a>
     </div>
     <div class="sidebar-item-box">
       <a href="">
-        <span class="site-item-stat-count">2</span>
+        <span class="site-item-stat-count">11</span>
         <span class="site-item-stat-name">分类</span>
       </a>
     </div>
     <div class="sidebar-item-box">
       <a href="/tags/">
-        <span class="site-item-stat-count">2</span>
+        <span class="site-item-stat-count">11</span>
         <span class="site-item-stat-name">标签</span>
       </a>
     </div>
@@ -217,7 +217,12 @@
     <ul class="markdownIt-TOC">
 <li>
 <ul>
-<li><a href="#%E6%80%9D%E8%B7%AF">思路</a></li>
+<li><a href="#%E6%80%9D%E8%B7%AF">思路</a>
+<ul>
+<li><a href="#%E7%BA%BF%E6%AE%B5%E6%A0%91%E4%B8%8A%E5%90%88%E5%B9%B6%E6%97%B6%E7%9A%84%E5%8E%BB%E9%87%8D%E5%B7%A6%E5%84%BF%E5%AD%90%E5%8F%B3%E7%AB%AF%E7%82%B9-%E5%92%8C-%E5%8F%B3%E5%84%BF%E5%AD%90%E5%B7%A6%E7%AB%AF%E7%82%B9">线段树上合并时的去重（左儿子右端点 和 右儿子左端点）</a></li>
+<li><a href="#%E9%87%8D%E9%93%BE%E8%B7%B3%E8%B7%83%E6%97%B6%E7%9A%84%E5%8E%BB%E9%87%8D%E9%87%8D%E9%93%BE%E8%BF%9E%E6%8E%A5%E5%A4%84-%E5%8D%B3-%E8%BD%BB%E9%93%BE%E4%B8%A4%E7%AB%AF%E7%82%B9">重链跳跃时的去重（重链连接处 即 轻链两端点）</a></li>
+</ul>
+</li>
 <li><a href="#%E4%BB%A3%E7%A0%81">代码</a></li>
 </ul>
 </li>
@@ -500,6 +505,12 @@ window.addEventListener('load', function() {
         <span class="pc-show">分类于</span>
         
           
+            <a href="https://emptysetvvvv.github.io/tag/8Rbfu_pxN/">
+              <span>轻重链剖分</span>
+            </a>、
+          
+        
+          
             <a href="https://emptysetvvvv.github.io/tag/jEyWrnLa1/">
               <span>题解</span>
             </a>
@@ -515,7 +526,7 @@ window.addEventListener('load', function() {
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>1095<span class="pc-show">字数</span></span>
+      <span>1132<span class="pc-show">字数</span></span>
     </span>
     
   </div>
@@ -523,17 +534,12 @@ window.addEventListener('load', function() {
               <div class="post-body next-md-body" id="post_body">
                 <h2 id="思路">思路</h2>
 <p>本题的思维难度很小，用线段树维护区间颜色段数，重点在如何实现去重。</p>
-<p>现有的轻重链剖分题解，基本上都是开了空间大小为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>4</mn></mrow><annotation encoding="application/x-tex">4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">4</span></span></span></span> 倍的 <code>lc,rc</code> 数组，分别维护区间左右端点颜色，其实根本没有必要，</p>
-<p>一个 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 倍空间的 <code>col</code> 数组足以解决问题，而且贼好写。</p>
-<ol>
-<li><strong>线段树上合并时的去重</strong>（左儿子右端点 和 右儿子左端点）</li>
-</ol>
-<p>我们用 <code>sum[i]</code> 表示 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> 所管辖区间内的颜色段数。若 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> 所管辖的区间为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>[</mo><mi>l</mi><mo separator="true">,</mo><mi>r</mi><mo>]</mo></mrow><annotation encoding="application/x-tex">[l,r]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mclose">]</span></span></span></span>，那么左儿子管辖区间为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>[</mo><mi>l</mi><mo separator="true">,</mo><mi>m</mi><mi>i</mi><mi>d</mi><mo>]</mo></mrow><annotation encoding="application/x-tex">[l,mid]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">i</span><span class="mord mathdefault">d</span><span class="mclose">]</span></span></span></span>，右儿子管辖区间为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>[</mo><mi>m</mi><mi>i</mi><mi>d</mi><mo>+</mo><mn>1</mn><mo separator="true">,</mo><mi>r</mi><mo>]</mo></mrow><annotation encoding="application/x-tex">[mid+1,r]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathdefault">m</span><span class="mord mathdefault">i</span><span class="mord mathdefault">d</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mclose">]</span></span></span></span>，我们<strong>想要判断合并时会不会计重，其实只是想知道 <code>col[mid]</code> 是否等于 <code>col[mid+1]</code></strong>；</p>
+<p>现有的轻重链剖分题解，基本上都是开了空间大小为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>4</mn></mrow><annotation encoding="application/x-tex">4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">4</span></span></span></span> 倍的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>lc,rc</mtext></mrow><annotation encoding="application/x-tex">\text{lc,rc}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord text"><span class="mord">lc,rc</span></span></span></span></span> 数组，分别维护区间左右端点颜色，其实根本没有必要，一个 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 倍空间的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>col</mtext></mrow><annotation encoding="application/x-tex">\text{col}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord text"><span class="mord">col</span></span></span></span></span> 数组足以解决问题，而且贼好写。</p>
+<h3 id="线段树上合并时的去重左儿子右端点-和-右儿子左端点">线段树上合并时的去重（左儿子右端点 和 右儿子左端点）</h3>
+<p>我们用 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>sum[i]</mtext></mrow><annotation encoding="application/x-tex">\text{sum[i]}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">sum[i]</span></span></span></span></span> 表示 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> 所管辖区间内的颜色段数。若 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> 所管辖的区间为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>[</mo><mi>l</mi><mo separator="true">,</mo><mi>r</mi><mo>]</mo></mrow><annotation encoding="application/x-tex">[l,r]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mclose">]</span></span></span></span>，那么左儿子管辖区间为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>[</mo><mi>l</mi><mo separator="true">,</mo><mi>m</mi><mi>i</mi><mi>d</mi><mtext> </mtext><mo>]</mo></mrow><annotation encoding="application/x-tex">[l,mid\ ]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">i</span><span class="mord mathdefault">d</span><span class="mspace"> </span><span class="mclose">]</span></span></span></span>，右儿子管辖区间为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>[</mo><mi>m</mi><mi>i</mi><mi>d</mi><mo>+</mo><mn>1</mn><mo separator="true">,</mo><mi>r</mi><mo>]</mo></mrow><annotation encoding="application/x-tex">[mid+1,r]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathdefault">m</span><span class="mord mathdefault">i</span><span class="mord mathdefault">d</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mclose">]</span></span></span></span>，我们 <strong>想要判断合并时会不会计重，其实只是想知道 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>col[mid]</mtext></mrow><annotation encoding="application/x-tex">\text{col[mid]}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">col[mid]</span></span></span></span></span> 是否等于</strong> <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>col[mid+1]</mtext></mrow><annotation encoding="application/x-tex">\text{col[mid+1]}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">col[mid+1]</span></span></span></span></span> ；</p>
 <p>这样的好处是：<strong>上方的节点不用继承儿子的颜色</strong>，因为我们只要知道 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> 的管辖区间，就可以知道左右端点的颜色。</p>
-<p>同样的，懒标记下传时，只需要将左儿子右端点 <code>col[mid]</code> 和右儿子左端点 <code>col[mid+1]</code> 修改就可以了。</p>
-<ol start="2">
-<li><strong>重链跳跃时的去重</strong>（重链连接处 即 轻链两端点）</li>
-</ol>
+<p>同样的，懒标记下传时，只需要将左儿子右端点 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>col[mid]</mtext></mrow><annotation encoding="application/x-tex">\text{col[mid]}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">col[mid]</span></span></span></span></span> 和右儿子左端点 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>col[mid+1]</mtext></mrow><annotation encoding="application/x-tex">\text{col[mid+1]}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">col[mid+1]</span></span></span></span></span> 修改就可以了。</p>
+<h3 id="重链跳跃时的去重重链连接处-即-轻链两端点">重链跳跃时的去重（重链连接处 即 轻链两端点）</h3>
 <p>大部分题解都通过记录上次跳跃位置实现，之所以要记录上次跳的位置，是因为<strong>由于有懒标记，只有查询后的颜色才是正确的（该下放的都下放了）。</strong></p>
 <p>其实有一种更好写的方法，我们可以在全部查完后，重新跳一遍来判断重链连接处，详见代码。</p>
 <h2 id="代码">代码</h2>
@@ -663,11 +669,17 @@ int main() {
   </ul>
   <div class="tags">
     
+      <a href="https://emptysetvvvv.github.io/tag/8Rbfu_pxN/"># 轻重链剖分</a>
+    
       <a href="https://emptysetvvvv.github.io/tag/jEyWrnLa1/"># 题解</a>
     
   </div>
   <div class="nav">
     <div class="nav-prev">
+      
+        <i class="fa fa-chevron-left"></i>
+        <a class="nav-pc-next" title="题解 [SHOI2012]随机树 洛谷P3830" href="https://emptysetvvvv.github.io/post/ti-jie-shoi2012sui-ji-shu-luo-gu-p3830/">题解 [SHOI2012]随机树 洛谷P3830</a class="nav-pc-next">
+        <a class="nav-mobile-prev" title="题解 [SHOI2012]随机树 洛谷P3830" href="https://emptysetvvvv.github.io/post/ti-jie-shoi2012sui-ji-shu-luo-gu-p3830/">上一篇</a>
       
     </div>
     <div class="nav-next">
