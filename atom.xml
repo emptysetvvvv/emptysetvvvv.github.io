@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://emptysetvvvv.github.io</id>
     <title>emptyset</title>
-    <updated>2020-04-20T16:26:02.594Z</updated>
+    <updated>2020-04-20T16:53:04.640Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://emptysetvvvv.github.io"/>
     <link rel="self" href="https://emptysetvvvv.github.io/atom.xml"/>
@@ -10,6 +10,26 @@
     <logo>https://emptysetvvvv.github.io/images/avatar.png</logo>
     <icon>https://emptysetvvvv.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, emptyset</rights>
+    <entry>
+        <title type="html"><![CDATA[实链]]></title>
+        <id>https://emptysetvvvv.github.io/post/Tools/</id>
+        <link href="https://emptysetvvvv.github.io/post/Tools/">
+        </link>
+        <updated>2020-04-20T16:38:57.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="work">Work</h2>
+<ul>
+<li><a href="https://csacademy.com/app/graph_editor/">graph editor</a></li>
+<li><a href="https://alpha.wallhaven.cc">wallhaven</a></li>
+<li><a href="https://sm.ms/">Image Upload</a></li>
+<li><a href="http://bytew.net/OIer/">OIerDb</a></li>
+</ul>
+<h2 id="others">Others</h2>
+<ul>
+<li><a href="http://www.qijishow.com/Brand/Brand23/index.htm">Silk</a></li>
+<li><a href="http://fakeupdate.net/">Fake Windows Update</a></li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[题解 [NOI2012]迷失游乐园 洛谷P2081]]></title>
         <id>https://emptysetvvvv.github.io/post/ti-jie-noi2012mi-shi-you-le-yuan-p2081/</id>
@@ -1389,69 +1409,6 @@ Do this because it's the only way of discovering how that boundary should be mov
 <p>后生多努力</p>
 </blockquote>
 <figure data-type="image" tabindex="2"><img src="https://emptysetvvvv.github.io/post-images/1586359801049.png" alt="" loading="lazy"></figure>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[前线战况]]></title>
-        <id>https://emptysetvvvv.github.io/post/progress/</id>
-        <link href="https://emptysetvvvv.github.io/post/progress/">
-        </link>
-        <updated>2020-04-08T13:08:39.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="about">About</h2>
-<p>Hello,welcome to Empty Set!<br>
-emptyset 是 SN 省的退役 OIer.</p>
-<h2 id="todo">Todo</h2>
-<blockquote>
-<p>至多同时存在一个计划，最新更新的计划即当前计划黑体表示，达成的计划划掉表示，放弃或已经不可能达成的计划斜体表示。</p>
-</blockquote>
-<ul>
-<li><strong>在高三前恢复年级前十水平，至少进一次年级前十；</strong></li>
-</ul>
-<h2 id="rule">Rule</h2>
-<h3 id="颓圮">颓圮</h3>
-<ol>
-<li>除周六晚（午夜前）不应在 Bilibili 观看与文化课强相关视频；</li>
-<li>除周六晚（午夜前）不应在知乎浏览或回答问题，平时只将其作为搜索工具；</li>
-<li>除周末外不应访问除 princess 外的 QQ 空间，不升级 TIM；</li>
-<li>在高考前不打 Ra3，若《日冕》最终公测版发行，可在两星期内破例颓圮；</li>
-<li>退役后不登录洛谷及其他任何 OJ；</li>
-</ol>
-<h3 id="代码">代码</h3>
-<ol>
-<li>代码风格尽量与刘汝佳一致；</li>
-<li><code>for</code> <code>if</code> 等与其后的括号之间无空格；</li>
-<li>变量名与运算符之间等有空格；</li>
-<li>分号后如有语句有空格；</li>
-<li>若表达式设计多种优先级的运算，则将除最后执行的运算外的若干表达式视为整体，内部无空格，以避免表达式过长；</li>
-<li>左花括号不应换行，并且最终代码尽可能地少使用花括号；</li>
-<li><code>for</code> 后的语句无论长短，都应换行；</li>
-<li><code>if</code> 后的语句若无花括号则不换行；</li>
-<li>变量名清晰简洁，尽量少使用题目相关特定英文单词及其缩写；</li>
-<li>将 <code>f</code> <code>g</code> 等作为动态规划数组名，<code>dp</code> 作为函数名；</li>
-<li>数据结构尽量用结构体封装，结构体类型名称单词首字母大写，若为缩写应全部大写，如 <code>BIT</code> <code>Treap</code> <code>RedBlackTree</code>，结构体变量名称为小写缩写，如 <code>st</code> <code>bit</code> <code>tp</code>等，其内部也应尽量用结构体组代替多个数组，如 <code>t[i].sum</code> <code>t[i].ls</code> 等；</li>
-<li>输入输出使用 <code>scanf</code> <code>printf</code>，除特殊卡常不使用 <code>fread</code> <code>fwrite</code>；</li>
-</ol>
-<h3 id="题解">题解</h3>
-<ol>
-<li>题解包含「背景」「思路」「代码」「P.S.」，其中「思路」是必须的，若有多种解法，可以用若干组「思路」「代码」表示，均使用 Markdown 二级标题表示；</li>
-<li>书写规范参考 Studying Father 的<a href="https://studyingfather.blog.luogu.org/blog-written-guide">《如何用 Markdown&amp;LaTeX 写一篇排版整齐的题解？》</a> 与 OI-Wiki <a href="https://oi-wiki.org/intro/htc/">《如何参与》</a>；</li>
-<li>不滥用 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>LaTeX</mtext></mrow><annotation encoding="application/x-tex">\LaTeX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.89883em;vertical-align:-0.2155em;"></span><span class="mord text"><span class="mord textrm">L</span><span class="mspace" style="margin-right:-0.36em;"></span><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.68333em;"><span style="top:-2.904999em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord text"><span class="mord textrm sizing reset-size6 size3">A</span></span></span></span></span></span><span class="mspace" style="margin-right:-0.15em;"></span><span class="mord text"><span class="mord textrm">T</span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.46782999999999997em;"><span style="top:-2.7845em;"><span class="pstrut" style="height:3em;"></span><span class="mord text"><span class="mord textrm">E</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2155em;"><span></span></span></span></span><span class="mspace" style="margin-right:-0.125em;"></span><span class="mord textrm">X</span></span></span></span></span></span>，参考<a href="http://www.mohu.org/info/symbols/symbols.htm">《常用数学符号的 LaTeX 表示方法》</a>，算法名和人名不应使用渲染等；</li>
-<li>对于动态规划、数学、字符串、图论等方面题目，数组应用函数的形式表示，如 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>f</mi><mrow><mi>i</mi><mo separator="true">,</mo><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">f_{i,j}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.980548em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.10764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mpunct mtight">,</span><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span>，下标嵌套严格不大于两层，对于数据结构类似方面题目，数组可直接用代码表示，如 <code>t[i].sum</code>；</li>
-</ol>
-<h3 id="笔记">笔记</h3>
-<ol>
-<li>核心：仅方便自己理解，千万不能进入误区一定要做成教程，没有必要；</li>
-</ol>
-<h3 id="默示录">默示录</h3>
-<ol>
-<li>标题/作者/时间均为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>LaTeX</mtext></mrow><annotation encoding="application/x-tex">\LaTeX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.89883em;vertical-align:-0.2155em;"></span><span class="mord text"><span class="mord textrm">L</span><span class="mspace" style="margin-right:-0.36em;"></span><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.68333em;"><span style="top:-2.904999em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord text"><span class="mord textrm sizing reset-size6 size3">A</span></span></span></span></span></span><span class="mspace" style="margin-right:-0.15em;"></span><span class="mord text"><span class="mord textrm">T</span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.46782999999999997em;"><span style="top:-2.7845em;"><span class="pstrut" style="height:3em;"></span><span class="mord text"><span class="mord textrm">E</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2155em;"><span></span></span></span></span><span class="mspace" style="margin-right:-0.125em;"></span><span class="mord textrm">X</span></span></span></span></span></span> text 字体，居中，大小依次为 Huge/large/normalsize；</li>
-<li>正文与标题之间用分割线分隔；</li>
-<li>正文部分可用 Markdown 二级标题并列章节；</li>
-<li>默示录使用 emptyset 独有风格书写；</li>
-</ol>
-<h2 id="motto">Motto</h2>
-<p>&quot;Raise your quality standards as high as you can live with, avoid wasting your time on routine problems, and always try to work as closely as possible at the boundary of your abilities. Do this, because it is the only way of discovering how that boundary should be moved forward.&quot;</p>
-<p>This rule tells us that the obviously possible should be shunned as well as the obviously impossible: the first would not be instructive, the second would be hopeless, and both in their own way are barren.</p>
 ]]></content>
     </entry>
 </feed>
