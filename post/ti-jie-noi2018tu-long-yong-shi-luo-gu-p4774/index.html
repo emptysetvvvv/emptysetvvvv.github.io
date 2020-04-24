@@ -8,7 +8,7 @@
 <meta name="description" content="A.F.O | R.I.P.">
 <meta name="theme-color" content="#000">
 <title>题解 [NOI2018]屠龙勇士 洛谷P4774  | emptyset</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1587576212117">
+<link rel="shortcut icon" href="/favicon.ico?v=1587746083067">
 <link rel="stylesheet" href="/styles/main.css">
 <link rel="stylesheet" href="/media/css/gemini.css">
 
@@ -610,7 +610,7 @@ long long ExCRT() {
 		exgcd(A, B, x, y, gcd), x = (x%B+B) % B;
 		if(C % gcd) return -1;
 		ans += (__int128)(C/gcd) * x % (B/gcd) * lcm % (lcm*=B/gcd);
-        ans %= lcm;
+		ans %= lcm;
 	}
 	if(ans &lt; mx) ans += ((mx-ans-1)/lcm+1) * lcm;
 	return ans;
