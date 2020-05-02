@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://emptysetvvvv.github.io</id>
     <title>emptyset</title>
-    <updated>2020-04-24T16:35:12.927Z</updated>
+    <updated>2020-05-02T14:54:09.073Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://emptysetvvvv.github.io"/>
     <link rel="self" href="https://emptysetvvvv.github.io/atom.xml"/>
@@ -1107,6 +1107,14 @@ Do this because it's the only way of discovering how that boundary should be mov
         <link href="https://emptysetvvvv.github.io/post/ti-jie-qi-yi-shi-ke-chun-jie-lian-ji-sai-2019-ban-jue-sai-sheng-zhe-zu-kai-sai-ri/">
         </link>
         <updated>2020-04-08T18:38:15.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="前言">前言</h2>
+<blockquote>
+<p>谨以此篇献给继续前行的 Phinney，三年省二后，他拿到了 CSP—S 全省第二。</p>
+</blockquote>
+<blockquote>
+<p>或许只有在数学方面，才有一丁点资格给他出题吧，作为他颓圮的时候的一抹乐趣。</p>
+</blockquote>
+]]></summary>
         <content type="html"><![CDATA[<h2 id="前言">前言</h2>
 <blockquote>
 <p>谨以此篇献给继续前行的 Phinney，三年省二后，他拿到了 CSP—S 全省第二。</p>
@@ -1114,6 +1122,7 @@ Do this because it's the only way of discovering how that boundary should be mov
 <blockquote>
 <p>或许只有在数学方面，才有一丁点资格给他出题吧，作为他颓圮的时候的一抹乐趣。</p>
 </blockquote>
+<!-- more -->
 <h2 id="龙魂经济学dragonsoul">龙魂经济学（dragonsoul）</h2>
 <p>傻逼题，太水了.</p>
 <h3 id="subtask1">Subtask1</h3>
@@ -1305,7 +1314,7 @@ Do this because it's the only way of discovering how that boundary should be mov
 <hr>
 <h2 id="前言">前言</h2>
 <blockquote>
-<p>宋学长初中进过省队、打过国赛，努力过也颓圮过，也算是不枉此行了。</p>
+<p>宋学长曾是 SN 省历史上最年轻的省队选手，初二便去了国赛，努力过亦颓圮过，也算是不枉此行了。</p>
 </blockquote>
 <blockquote>
 <p>p.s 可以在洛谷《天天爱跑步》和《[NOI2001]炮兵阵地》以及很多其他题解的最高赞中找到他。</p>
