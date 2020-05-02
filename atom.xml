@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://emptysetvvvv.github.io</id>
     <title>emptyset</title>
-    <updated>2020-05-02T14:54:09.073Z</updated>
+    <updated>2020-05-02T15:09:02.183Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://emptysetvvvv.github.io"/>
     <link rel="self" href="https://emptysetvvvv.github.io/atom.xml"/>
@@ -16,10 +16,16 @@
         <link href="https://emptysetvvvv.github.io/post/ti-jie-noi2018tu-long-yong-shi-luo-gu-p4774/">
         </link>
         <updated>2020-04-22T15:44:13.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="背景">背景</h2>
+<blockquote>
+<p>感觉这题还是比较清晰的。</p>
+</blockquote>
+]]></summary>
         <content type="html"><![CDATA[<h2 id="背景">背景</h2>
 <blockquote>
 <p>感觉这题还是比较清晰的。</p>
 </blockquote>
+<!-- more -->
 <h2 id="思路">思路</h2>
 <h3 id="part-i">Part I</h3>
 <p>很明显每条龙对应的剑是确定的，用平衡树处理出第 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> 条龙对应的剑的攻击力是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>b</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">b_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>，为了方便展示，我就偷懒用 <code>multiset&lt;long long&gt;</code> 实现了。</p>
@@ -134,6 +140,14 @@ int main() {
         <link href="https://emptysetvvvv.github.io/post/ti-jie-noi2012mi-shi-you-le-yuan-p2081/">
         </link>
         <updated>2020-04-16T08:08:56.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="背景">背景</h2>
+<blockquote>
+<p>过于无聊，神犇请自行跳过。</p>
+</blockquote>
+<blockquote>
+<p>这是她第 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span> 篇题解。</p>
+</blockquote>
+]]></summary>
         <content type="html"><![CDATA[<h2 id="背景">背景</h2>
 <blockquote>
 <p>过于无聊，神犇请自行跳过。</p>
@@ -141,6 +155,7 @@ int main() {
 <blockquote>
 <p>这是她第 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span> 篇题解。</p>
 </blockquote>
+<!-- more -->
 <h2 id="思路">思路</h2>
 <blockquote>
 <p>过于冗长，神犇请自行跳过。</p>
@@ -442,7 +457,13 @@ int main() {
         <link href="https://emptysetvvvv.github.io/post/ti-jie-sdoi2011ran-se-luo-gu-p2486/">
         </link>
         <updated>2020-04-10T10:06:09.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="思路">思路</h2>
+        <summary type="html"><![CDATA[<h2 id="背景">背景</h2>
+<p>emptyset 历时最久的一道题，前后跨度两周，一遍遍删除重构，以自以为巧妙的方法通过了。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="背景">背景</h2>
+<p>emptyset 历时最久的一道题，前后跨度两周，一遍遍删除重构，以自以为巧妙的方法通过了。</p>
+<!-- more -->
+<h2 id="思路">思路</h2>
 <p>本题的思维难度很小，用线段树维护区间颜色段数，重点在如何实现去重。</p>
 <p>现有的轻重链剖分题解，基本上都是开了空间大小为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>4</mn></mrow><annotation encoding="application/x-tex">4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">4</span></span></span></span> 倍的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>l</mi><mi>c</mi><mo separator="true">,</mo><mi>r</mi><mi>c</mi></mrow><annotation encoding="application/x-tex">lc,rc</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">c</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">c</span></span></span></span> 数组，分别维护区间左右端点颜色，其实根本没有必要，一个 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 倍空间的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>c</mi><mi>o</mi><mi>l</mi></mrow><annotation encoding="application/x-tex">col</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">c</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span></span></span></span> 数组足以解决问题，而且贼好写。</p>
 <h3 id="线段树上合并时的去重左儿子右端点-和-右儿子左端点">线段树上合并时的去重（左儿子右端点 和 右儿子左端点）</h3>
@@ -568,6 +589,17 @@ int main() {
         <link href="https://emptysetvvvv.github.io/post/ti-jie-haoi2008yuan-shang-de-zheng-dian-luo-gu-p2508/">
         </link>
         <updated>2020-04-10T07:43:37.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="背景">背景</h2>
+<blockquote>
+<p>深夜，一位退役 OIer 正坐在电脑前恰着零食喝着快乐水逛着B站。</p>
+</blockquote>
+<blockquote>
+<p>突然，emptyset 发现了一则<a href="https://www.bilibili.com/video/av12131743/">十分通俗易懂并且相当有趣的双语科普视频</a>。</p>
+</blockquote>
+<blockquote>
+<p>emptyset 总记得见过这问题，迅速打开洛咕一看，何止是见过，明晃晃赤裸裸的“历史分数 20”惨不兮兮的挂在那里。吓得 emptyset 赶紧打开记事本码了起来。</p>
+</blockquote>
+]]></summary>
         <content type="html"><![CDATA[<h2 id="背景">背景</h2>
 <blockquote>
 <p>深夜，一位退役 OIer 正坐在电脑前恰着零食喝着快乐水逛着B站。</p>
@@ -578,6 +610,7 @@ int main() {
 <blockquote>
 <p>emptyset 总记得见过这问题，迅速打开洛咕一看，何止是见过，明晃晃赤裸裸的“历史分数 20”惨不兮兮的挂在那里。吓得 emptyset 赶紧打开记事本码了起来。</p>
 </blockquote>
+<!-- more -->
 <h2 id="思路">思路</h2>
 <h3 id="part-i">Part I</h3>
 <p>假如我们在研究这样一类问题：<strong>以原点为圆心，以 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msqrt><mi>N</mi></msqrt></mrow><annotation encoding="application/x-tex">\sqrt N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.04em;vertical-align:-0.11333499999999996em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9266650000000001em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;padding-left:0.833em;">N</span></span><span style="top:-2.886665em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,

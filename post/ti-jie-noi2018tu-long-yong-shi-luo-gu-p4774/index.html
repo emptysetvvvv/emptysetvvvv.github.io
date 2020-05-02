@@ -8,7 +8,7 @@
 <meta name="description" content="A.F.O | R.I.P.">
 <meta name="theme-color" content="#000">
 <title>题解 [NOI2018]屠龙勇士 洛谷P4774  | emptyset</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1588431236046">
+<link rel="shortcut icon" href="/favicon.ico?v=1588432137332">
 <link rel="stylesheet" href="/styles/main.css">
 <link rel="stylesheet" href="/media/css/gemini.css">
 
@@ -551,6 +551,7 @@ window.addEventListener('load', function() {
 <blockquote>
 <p>感觉这题还是比较清晰的。</p>
 </blockquote>
+<!-- more -->
 <h2 id="思路">思路</h2>
 <h3 id="part-i">Part I</h3>
 <p>很明显每条龙对应的剑是确定的，用平衡树处理出第 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> 条龙对应的剑的攻击力是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>b</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">b_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>，为了方便展示，我就偷懒用 <code>multiset&lt;long long&gt;</code> 实现了。</p>

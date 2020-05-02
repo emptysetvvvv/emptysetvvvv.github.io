@@ -8,7 +8,7 @@
 <meta name="description" content="A.F.O | R.I.P.">
 <meta name="theme-color" content="#000">
 <title>题解 [SDOI2011]染色 洛谷P2486 | emptyset</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1588431236046">
+<link rel="shortcut icon" href="/favicon.ico?v=1588432137332">
 <link rel="stylesheet" href="/styles/main.css">
 <link rel="stylesheet" href="/media/css/gemini.css">
 
@@ -228,6 +228,7 @@
     <ul class="markdownIt-TOC">
 <li>
 <ul>
+<li><a href="#%E8%83%8C%E6%99%AF">背景</a></li>
 <li><a href="#%E6%80%9D%E8%B7%AF">思路</a>
 <ul>
 <li><a href="#%E7%BA%BF%E6%AE%B5%E6%A0%91%E4%B8%8A%E5%90%88%E5%B9%B6%E6%97%B6%E7%9A%84%E5%8E%BB%E9%87%8D%E5%B7%A6%E5%84%BF%E5%AD%90%E5%8F%B3%E7%AB%AF%E7%82%B9-%E5%92%8C-%E5%8F%B3%E5%84%BF%E5%AD%90%E5%B7%A6%E7%AB%AF%E7%82%B9">线段树上合并时的去重（左儿子右端点 和 右儿子左端点）</a></li>
@@ -537,13 +538,16 @@ window.addEventListener('load', function() {
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>1097<span class="pc-show">字数</span></span>
+      <span>1133<span class="pc-show">字数</span></span>
     </span>
     
   </div>
 </header>
               <div class="post-body next-md-body" id="post_body">
-                <h2 id="思路">思路</h2>
+                <h2 id="背景">背景</h2>
+<p>emptyset 历时最久的一道题，前后跨度两周，一遍遍删除重构，以自以为巧妙的方法通过了。</p>
+<!-- more -->
+<h2 id="思路">思路</h2>
 <p>本题的思维难度很小，用线段树维护区间颜色段数，重点在如何实现去重。</p>
 <p>现有的轻重链剖分题解，基本上都是开了空间大小为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>4</mn></mrow><annotation encoding="application/x-tex">4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">4</span></span></span></span> 倍的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>l</mi><mi>c</mi><mo separator="true">,</mo><mi>r</mi><mi>c</mi></mrow><annotation encoding="application/x-tex">lc,rc</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">c</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">c</span></span></span></span> 数组，分别维护区间左右端点颜色，其实根本没有必要，一个 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 倍空间的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>c</mi><mi>o</mi><mi>l</mi></mrow><annotation encoding="application/x-tex">col</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">c</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span></span></span></span> 数组足以解决问题，而且贼好写。</p>
 <h3 id="线段树上合并时的去重左儿子右端点-和-右儿子左端点">线段树上合并时的去重（左儿子右端点 和 右儿子左端点）</h3>
