@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://emptysetvvvv.github.io</id>
     <title>emptyset</title>
-    <updated>2020-05-03T13:45:20.695Z</updated>
+    <updated>2020-05-03T14:17:55.588Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://emptysetvvvv.github.io"/>
     <link rel="self" href="https://emptysetvvvv.github.io/atom.xml"/>
@@ -370,8 +370,12 @@ int main() {
         <link href="https://emptysetvvvv.github.io/post/ti-jie-shoi2012sui-ji-shu-luo-gu-p3830/">
         </link>
         <updated>2020-04-14T09:05:04.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="背景">背景</h2>
+<p>前人之述备矣，BJpers2 神犇的证明更是极为精彩，让 emptyset 深受触动。无奈 emptyset 实在是太蒻了，只好属文以记之。</p>
+]]></summary>
         <content type="html"><![CDATA[<h2 id="背景">背景</h2>
 <p>前人之述备矣，BJpers2 神犇的证明更是极为精彩，让 emptyset 深受触动。无奈 emptyset 实在是太蒻了，只好属文以记之。</p>
+<!-- more -->
 <h2 id="思路">思路</h2>
 <h3 id="第一问">第一问</h3>
 <p>设 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>g</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">g_{i}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 表示有 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> 个叶子的二叉树的期望叶子平均深度，</p>
@@ -467,10 +471,14 @@ int main() {
         </link>
         <updated>2020-04-10T10:06:09.000Z</updated>
         <summary type="html"><![CDATA[<h2 id="背景">背景</h2>
+<blockquote>
 <p>emptyset 历时最久的一道题，前后跨度两周，一遍遍删除重构，以自以为巧妙的方法通过了。</p>
+</blockquote>
 ]]></summary>
         <content type="html"><![CDATA[<h2 id="背景">背景</h2>
+<blockquote>
 <p>emptyset 历时最久的一道题，前后跨度两周，一遍遍删除重构，以自以为巧妙的方法通过了。</p>
+</blockquote>
 <!-- more -->
 <h2 id="思路">思路</h2>
 <p>本题的思维难度很小，用线段树维护区间颜色段数，重点在如何实现去重。</p>
