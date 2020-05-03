@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://emptysetvvvv.github.io</id>
     <title>emptyset</title>
-    <updated>2020-05-02T15:09:02.183Z</updated>
+    <updated>2020-05-03T13:43:38.661Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://emptysetvvvv.github.io"/>
     <link rel="self" href="https://emptysetvvvv.github.io/atom.xml"/>
@@ -119,6 +119,14 @@ int main() {
         <link href="https://emptysetvvvv.github.io/post/Tools/">
         </link>
         <updated>2020-04-20T16:38:57.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="work">Work</h2>
+<ul>
+<li><a href="https://csacademy.com/app/graph_editor/">graph editor</a></li>
+<li><a href="https://alpha.wallhaven.cc">wallhaven</a></li>
+<li><a href="https://sm.ms/">Image Upload</a></li>
+<li><a href="http://bytew.net/OIer/">OIerDb</a></li>
+</ul>
+]]></summary>
         <content type="html"><![CDATA[<h2 id="work">Work</h2>
 <ul>
 <li><a href="https://csacademy.com/app/graph_editor/">graph editor</a></li>
@@ -126,6 +134,7 @@ int main() {
 <li><a href="https://sm.ms/">Image Upload</a></li>
 <li><a href="http://bytew.net/OIer/">OIerDb</a></li>
 </ul>
+<!-- more -->
 <h2 id="others">Others</h2>
 <ul>
 <li><a href="http://www.qijishow.com/Brand/Brand23/index.htm">Silk</a></li>
@@ -812,9 +821,7 @@ int main() {
         <link href="https://emptysetvvvv.github.io/post/hui-yi-lu/">
         </link>
         <updated>2020-04-09T08:19:14.000Z</updated>
-        <content type="html"><![CDATA[<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathsize="2.488em"><mtext>回忆录</mtext></mstyle></mrow><annotation encoding="application/x-tex">\Huge\text{回忆录}
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.7001250399999999em;vertical-align:0em;"></span><span class="mord text sizing reset-size6 size11"><span class="mord cjk_fallback">回忆录</span></span></span></span></span></span></p>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathsize="1.2em"><mtext>__empty_set</mtext></mstyle></mrow><annotation encoding="application/x-tex">\large\text{\_\_empty\_set}
+        <summary type="html"><![CDATA[<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathsize="1.2em"><mtext>__empty_set</mtext></mstyle></mrow><annotation encoding="application/x-tex">\large\text{\_\_empty\_set}
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.110096em;vertical-align:-0.372em;"></span><span class="mord text sizing reset-size6 size7"><span class="mord">__empty_set</span></span></span></span></span></span></p>
 <p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>2019.11.17-</mtext><mi>inf</mi><mo>⁡</mo><mi mathvariant="normal">.</mi><mi>inf</mi><mo>⁡</mo><mi mathvariant="normal">.</mi><mi>inf</mi><mo>⁡</mo></mrow><annotation encoding="application/x-tex">\text{2019.11.17-}\inf.\inf.\inf
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord text"><span class="mord">2019.11.17-</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">in<span style="margin-right:0.07778em;">f</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">.</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">in<span style="margin-right:0.07778em;">f</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">.</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">in<span style="margin-right:0.07778em;">f</span></span></span></span></span></span></p>
@@ -825,6 +832,19 @@ int main() {
 <p>其实我没资格这么写，</p>
 <p>成功者才配留下回忆录，</p>
 <p>失败者的，只能叫耻辱柱。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathsize="1.2em"><mtext>__empty_set</mtext></mstyle></mrow><annotation encoding="application/x-tex">\large\text{\_\_empty\_set}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.110096em;vertical-align:-0.372em;"></span><span class="mord text sizing reset-size6 size7"><span class="mord">__empty_set</span></span></span></span></span></span></p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>2019.11.17-</mtext><mi>inf</mi><mo>⁡</mo><mi mathvariant="normal">.</mi><mi>inf</mi><mo>⁡</mo><mi mathvariant="normal">.</mi><mi>inf</mi><mo>⁡</mo></mrow><annotation encoding="application/x-tex">\text{2019.11.17-}\inf.\inf.\inf
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord text"><span class="mord">2019.11.17-</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">in<span style="margin-right:0.07778em;">f</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">.</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">in<span style="margin-right:0.07778em;">f</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">.</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">in<span style="margin-right:0.07778em;">f</span></span></span></span></span></span></p>
+<hr>
+<h2 id="前言">前言</h2>
+<p>我在退役许久后留下这些文字。</p>
+<p>已经不会有人来这里了。</p>
+<p>其实我没资格这么写，</p>
+<p>成功者才配留下回忆录，</p>
+<p>失败者的，只能叫耻辱柱。</p>
+<!-- more -->
 <h2 id="20191129">2019.11.29</h2>
 <p>退役很多天了 可能就这样了吧</p>
 <p>我以为在颓坯一个多月后我可以潇洒的挥挥手恍惚间又看见曾经的豪迈万丈</p>
@@ -948,9 +968,7 @@ int main() {
         <link href="https://emptysetvvvv.github.io/post/mou-xian-shi/">
         </link>
         <updated>2020-04-09T03:37:34.000Z</updated>
-        <content type="html"><![CDATA[<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathsize="2.488em"><mtext>冒险史</mtext></mstyle></mrow><annotation encoding="application/x-tex">\Huge\text{冒险史}
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.7001250399999999em;vertical-align:0em;"></span><span class="mord text sizing reset-size6 size11"><span class="mord cjk_fallback">冒险史</span></span></span></span></span></span></p>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathsize="1.2em"><mtext>__empty_set</mtext></mstyle></mrow><annotation encoding="application/x-tex">\large\text{\_\_empty\_set}
+        <summary type="html"><![CDATA[<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathsize="1.2em"><mtext>__empty_set</mtext></mstyle></mrow><annotation encoding="application/x-tex">\large\text{\_\_empty\_set}
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.110096em;vertical-align:-0.372em;"></span><span class="mord text sizing reset-size6 size7"><span class="mord">__empty_set</span></span></span></span></span></span></p>
 <p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>2019.07.04-2019.08.03</mtext></mrow><annotation encoding="application/x-tex">\text{2019.07.04-2019.08.03}
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord text"><span class="mord">2019.07.04-2019.08.03</span></span></span></span></span></span></p>
@@ -960,6 +978,18 @@ int main() {
 <p>2019年暑假，Phinney/emptyset/6thNOS/马哥往 yyhs 训练。</p>
 </blockquote>
 <figure data-type="image" tabindex="1"><img src="https://emptysetvvvv.github.io/post-images/1586405808478.jpg" alt="" loading="lazy"></figure>
+]]></summary>
+        <content type="html"><![CDATA[<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathsize="1.2em"><mtext>__empty_set</mtext></mstyle></mrow><annotation encoding="application/x-tex">\large\text{\_\_empty\_set}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.110096em;vertical-align:-0.372em;"></span><span class="mord text sizing reset-size6 size7"><span class="mord">__empty_set</span></span></span></span></span></span></p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>2019.07.04-2019.08.03</mtext></mrow><annotation encoding="application/x-tex">\text{2019.07.04-2019.08.03}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord text"><span class="mord">2019.07.04-2019.08.03</span></span></span></span></span></span></p>
+<hr>
+<h2 id="背景">背景</h2>
+<blockquote>
+<p>2019年暑假，Phinney/emptyset/6thNOS/马哥往 yyhs 训练。</p>
+</blockquote>
+<figure data-type="image" tabindex="1"><img src="https://emptysetvvvv.github.io/post-images/1586405808478.jpg" alt="" loading="lazy"></figure>
+<!-- more -->
 <h2 id="代序">代序</h2>
 <p>我很庆幸，我出生于黄金时代。</p>
 <p>我十六岁的时候，共和国的铁路已经足以让我们在一天内穿过大半个国家。现在是公元9102年07月04日，我正在这样的特快列车上，她将于四个小时后停靠在浙江省余姚北站。</p>
@@ -1338,9 +1368,7 @@ Do this because it's the only way of discovering how that boundary should be mov
         <link href="https://emptysetvvvv.github.io/post/ssh-xue-chang-de-tui-chang-bai/">
         </link>
         <updated>2020-04-08T15:39:10.000Z</updated>
-        <content type="html"><![CDATA[<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathsize="2.074em"><mtext>学长的退场白</mtext></mstyle></mrow><annotation encoding="application/x-tex">\huge\text{学长的退场白}
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.41722642em;vertical-align:0em;"></span><span class="mord text sizing reset-size6 size10"><span class="mord cjk_fallback">学长的退场白</span></span></span></span></span></span></p>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathsize="1.2em"><mtext>SSHhh</mtext></mstyle></mrow><annotation encoding="application/x-tex">\large\text{SSHhh}
+        <summary type="html"><![CDATA[<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathsize="1.2em"><mtext>SSHhh</mtext></mstyle></mrow><annotation encoding="application/x-tex">\large\text{SSHhh}
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.833328em;vertical-align:0em;"></span><span class="mord text sizing reset-size6 size7"><span class="mord">SSHhh</span></span></span></span></span></span></p>
 <p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>2017.04.04-2019.11.17</mtext></mrow><annotation encoding="application/x-tex">\text{2017.04.04-2019.11.17}
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord text"><span class="mord">2017.04.04-2019.11.17</span></span></span></span></span></span></p>
@@ -1352,6 +1380,20 @@ Do this because it's the only way of discovering how that boundary should be mov
 <blockquote>
 <p>p.s 可以在洛谷《天天爱跑步》和《[NOI2001]炮兵阵地》以及很多其他题解的最高赞中找到他。</p>
 </blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathsize="1.2em"><mtext>SSHhh</mtext></mstyle></mrow><annotation encoding="application/x-tex">\large\text{SSHhh}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.833328em;vertical-align:0em;"></span><span class="mord text sizing reset-size6 size7"><span class="mord">SSHhh</span></span></span></span></span></span></p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>2017.04.04-2019.11.17</mtext></mrow><annotation encoding="application/x-tex">\text{2017.04.04-2019.11.17}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord text"><span class="mord">2017.04.04-2019.11.17</span></span></span></span></span></span></p>
+<hr>
+<h2 id="前言">前言</h2>
+<blockquote>
+<p>宋学长曾是 SN 省历史上最年轻的省队选手，初二便去了国赛，努力过亦颓圮过，也算是不枉此行了。</p>
+</blockquote>
+<blockquote>
+<p>p.s 可以在洛谷《天天爱跑步》和《[NOI2001]炮兵阵地》以及很多其他题解的最高赞中找到他。</p>
+</blockquote>
+<!-- more -->
 <h2 id="ssh-旧时个人主页">SSH 旧时个人主页</h2>
 <p>自己选择的路，跪着也要走完。</p>
 <p>只有看得见目标的人，才有资格凝望星辰大海</p>
