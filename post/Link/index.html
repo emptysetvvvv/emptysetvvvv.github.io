@@ -8,7 +8,7 @@
 <meta name="description" content="A.F.O | R.I.P.">
 <meta name="theme-color" content="#000">
 <title>生产序列 | emptyset</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1589300180385">
+<link rel="shortcut icon" href="/favicon.ico?v=1590248877744">
 <link rel="stylesheet" href="/styles/main.css">
 <link rel="stylesheet" href="/media/css/gemini.css">
 
@@ -531,6 +531,7 @@ window.addEventListener('load', function() {
 <li><a href="https://sm.ms/">Image Upload</a></li>
 <li><a href="http://bytew.net/OIer/">OIerDb</a></li>
 </ul>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=5042951&auto=0&height=66"></iframe>
 <!-- more -->
 <h2 id="reference">Reference</h2>
 <ul>
@@ -561,7 +562,8 @@ ll sg(ll x) { return rnd_INT() &amp; 1 ? x : -x; }
 ll rnd(ll l, ll r) {
 	if(l &gt; r) swap(l, r);
 	long long x = ((ll)rnd_INT() &lt;&lt; 31) | rnd_INT();
-	return l + x % (r-l+1); }
+	return l + x % (r-l+1);
+    }
 }
 using namespace NumSys;
 /*
@@ -667,8 +669,8 @@ Put stander code here.
 int main() {
 	int T = 10;
 	for(int i = 1; i &lt;= T; ++i) {
-		freopen((&quot;dragonsoul&quot;+to_string(i)+&quot;.in&quot;).c_str(), &quot;r&quot;, stdin);
-		freopen((&quot;dragonsoul&quot;+to_string(i)+&quot;.out&quot;).c_str(), &quot;w&quot;, stdout);
+		freopen((&quot;testdata&quot;+to_string(i)+&quot;.in&quot;).c_str(), &quot;r&quot;, stdin);
+		freopen((&quot;testdata&quot;+to_string(i)+&quot;.out&quot;).c_str(), &quot;w&quot;, stdout);
 		cerr &lt;&lt; &quot;test #&quot; &lt;&lt; i &lt;&lt; endl;
 		Stander::main();
 	}

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://emptysetvvvv.github.io</id>
     <title>emptyset</title>
-    <updated>2020-05-12T16:16:27.009Z</updated>
+    <updated>2020-05-23T15:48:01.237Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://emptysetvvvv.github.io"/>
     <link rel="self" href="https://emptysetvvvv.github.io/atom.xml"/>
@@ -126,6 +126,7 @@ int main() {
 <li><a href="https://sm.ms/">Image Upload</a></li>
 <li><a href="http://bytew.net/OIer/">OIerDb</a></li>
 </ul>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=5042951&auto=0&height=66"></iframe>
 ]]></summary>
         <content type="html"><![CDATA[<h2 id="link">Link</h2>
 <ul>
@@ -134,6 +135,7 @@ int main() {
 <li><a href="https://sm.ms/">Image Upload</a></li>
 <li><a href="http://bytew.net/OIer/">OIerDb</a></li>
 </ul>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=5042951&auto=0&height=66"></iframe>
 <!-- more -->
 <h2 id="reference">Reference</h2>
 <ul>
@@ -164,7 +166,8 @@ ll sg(ll x) { return rnd_INT() &amp; 1 ? x : -x; }
 ll rnd(ll l, ll r) {
 	if(l &gt; r) swap(l, r);
 	long long x = ((ll)rnd_INT() &lt;&lt; 31) | rnd_INT();
-	return l + x % (r-l+1); }
+	return l + x % (r-l+1);
+    }
 }
 using namespace NumSys;
 /*
@@ -270,8 +273,8 @@ Put stander code here.
 int main() {
 	int T = 10;
 	for(int i = 1; i &lt;= T; ++i) {
-		freopen((&quot;dragonsoul&quot;+to_string(i)+&quot;.in&quot;).c_str(), &quot;r&quot;, stdin);
-		freopen((&quot;dragonsoul&quot;+to_string(i)+&quot;.out&quot;).c_str(), &quot;w&quot;, stdout);
+		freopen((&quot;testdata&quot;+to_string(i)+&quot;.in&quot;).c_str(), &quot;r&quot;, stdin);
+		freopen((&quot;testdata&quot;+to_string(i)+&quot;.out&quot;).c_str(), &quot;w&quot;, stdout);
 		cerr &lt;&lt; &quot;test #&quot; &lt;&lt; i &lt;&lt; endl;
 		Stander::main();
 	}
@@ -974,6 +977,7 @@ int main() {
 <p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>2019.11.17-</mtext><mi>inf</mi><mo>⁡</mo><mi mathvariant="normal">.</mi><mi>inf</mi><mo>⁡</mo><mi mathvariant="normal">.</mi><mi>inf</mi><mo>⁡</mo></mrow><annotation encoding="application/x-tex">\text{2019.11.17-}\inf.\inf.\inf
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord text"><span class="mord">2019.11.17-</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">in<span style="margin-right:0.07778em;">f</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">.</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">in<span style="margin-right:0.07778em;">f</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">.</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">in<span style="margin-right:0.07778em;">f</span></span></span></span></span></span></p>
 <hr>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=551339691&auto=0&height=66"></iframe>
 <h2 id="前言">前言</h2>
 <p>我在退役许久后留下这些文字。</p>
 <p>已经不会有人来这里了。</p>
@@ -986,6 +990,7 @@ int main() {
 <p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>2019.11.17-</mtext><mi>inf</mi><mo>⁡</mo><mi mathvariant="normal">.</mi><mi>inf</mi><mo>⁡</mo><mi mathvariant="normal">.</mi><mi>inf</mi><mo>⁡</mo></mrow><annotation encoding="application/x-tex">\text{2019.11.17-}\inf.\inf.\inf
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord text"><span class="mord">2019.11.17-</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">in<span style="margin-right:0.07778em;">f</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">.</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">in<span style="margin-right:0.07778em;">f</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">.</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">in<span style="margin-right:0.07778em;">f</span></span></span></span></span></span></p>
 <hr>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=551339691&auto=0&height=66"></iframe>
 <h2 id="前言">前言</h2>
 <p>我在退役许久后留下这些文字。</p>
 <p>已经不会有人来这里了。</p>
@@ -1121,6 +1126,7 @@ int main() {
 <p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>2019.07.04-2019.08.03</mtext></mrow><annotation encoding="application/x-tex">\text{2019.07.04-2019.08.03}
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord text"><span class="mord">2019.07.04-2019.08.03</span></span></span></span></span></span></p>
 <hr>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=39224244&auto=1&height=66"></iframe>
 <h2 id="背景">背景</h2>
 <blockquote>
 <p>2019年暑假，Phinney/emptyset/6thNOS/马哥往 yyhs 训练。</p>
@@ -1132,6 +1138,7 @@ int main() {
 <p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>2019.07.04-2019.08.03</mtext></mrow><annotation encoding="application/x-tex">\text{2019.07.04-2019.08.03}
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord text"><span class="mord">2019.07.04-2019.08.03</span></span></span></span></span></span></p>
 <hr>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=39224244&auto=1&height=66"></iframe>
 <h2 id="背景">背景</h2>
 <blockquote>
 <p>2019年暑假，Phinney/emptyset/6thNOS/马哥往 yyhs 训练。</p>
@@ -1520,6 +1527,7 @@ Do this because it's the only way of discovering how that boundary should be mov
 <p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>2017.04.04-2019.11.17</mtext></mrow><annotation encoding="application/x-tex">\text{2017.04.04-2019.11.17}
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord text"><span class="mord">2017.04.04-2019.11.17</span></span></span></span></span></span></p>
 <hr>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=541131&auto=0&height=66"></iframe>
 <h2 id="前言">前言</h2>
 <blockquote>
 <p>宋学长曾是 SN 省历史上最年轻的省队选手，初二便去了国赛，努力过亦颓圮过，也算是不枉此行了。</p>
@@ -1533,6 +1541,7 @@ Do this because it's the only way of discovering how that boundary should be mov
 <p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>2017.04.04-2019.11.17</mtext></mrow><annotation encoding="application/x-tex">\text{2017.04.04-2019.11.17}
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord text"><span class="mord">2017.04.04-2019.11.17</span></span></span></span></span></span></p>
 <hr>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=541131&auto=0&height=66"></iframe>
 <h2 id="前言">前言</h2>
 <blockquote>
 <p>宋学长曾是 SN 省历史上最年轻的省队选手，初二便去了国赛，努力过亦颓圮过，也算是不枉此行了。</p>
