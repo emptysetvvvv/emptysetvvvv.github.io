@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://emptysetvvvv.github.io</id>
     <title>emptyset</title>
-    <updated>2020-05-23T16:56:32.199Z</updated>
+    <updated>2020-05-31T11:15:05.483Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://emptysetvvvv.github.io"/>
     <link rel="self" href="https://emptysetvvvv.github.io/atom.xml"/>
@@ -167,7 +167,7 @@ ll rnd(ll l, ll r) {
 	if(l &gt; r) swap(l, r);
 	long long x = ((ll)rnd_INT() &lt;&lt; 31) | rnd_INT();
 	return l + x % (r-l+1);
-    }
+}
 }
 using namespace NumSys;
 /*
