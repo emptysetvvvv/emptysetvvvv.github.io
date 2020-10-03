@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://emptysetvvvv.github.io</id>
     <title>emptyset</title>
-    <updated>2020-10-03T05:53:20.087Z</updated>
+    <updated>2020-10-03T05:54:08.187Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://emptysetvvvv.github.io"/>
     <link rel="self" href="https://emptysetvvvv.github.io/atom.xml"/>
@@ -650,7 +650,7 @@ int main() {
 <ul>
 <li>Dylaaan
 <ul>
-<li><a href="https://zhuanlan.zhihu.com/p107107928">【极限】一篇文章，给高中生简单介绍极限</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/107107928">【极限】一篇文章，给高中生简单介绍极限</a></li>
 <li><a href="https://zhuanlan.zhihu.com/p/107077095">【洛必达】一篇文章，给高中生讲清楚洛必达</a></li>
 <li><a href="https://zhuanlan.zhihu.com/p/104544760">【数列】浅谈“不动点”求数列通项的方法</a></li>
 <li><a href="https://zhuanlan.zhihu.com/p/104596563">【数列】特征方程与特征根</a></li>
